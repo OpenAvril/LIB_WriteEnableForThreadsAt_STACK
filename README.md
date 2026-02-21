@@ -1,9 +1,6 @@
 # Avril - LIBRARY Template for Write Enable For Threads At Stack.
 ## Request, Wait, Write for Threads at Stack Control, Dynamic Link Library.
 
-## Similar Repository
- - https://github.com/cameron314/readerwriterqueue
-
 ### Using C++
 
 ### Using Windows 11 Home
