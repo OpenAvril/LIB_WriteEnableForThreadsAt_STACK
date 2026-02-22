@@ -1,6 +1,6 @@
 #pragma once
 
-namespace Avril_FSD
+namespace OpenAvrilLIB
 {
     class WriteEnableForThreadsAt_STACK_Control
     {

@@ -4,7 +4,7 @@
 #define LIBWRITEENABLEFORTHREADSATSTACK_API __declspec(dllimport)
 #endif
 
-namespace Avril_FSD
+namespace OpenAvrilLIB
 {
 	class LIBWRITEENABLEFORTHREADSATSTACK_API Library_WriteEnableForThreadsAt_STACK {
 	public:

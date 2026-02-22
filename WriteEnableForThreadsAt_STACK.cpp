@@ -1,33 +1,33 @@
 #include "pch.h"
 
 // classes.
-    class Avril_FSD::WriteEnableForThreadsAt_STACK_Global* _ptr_Global = NULL;
-    class Avril_FSD::WriteEnableForThreadsAt_STACK_Control* _ptr_WriteEnable_Control = NULL;
+    class OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global* _ptr_Global = NULL;
+    class OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control* _ptr_WriteEnable_Control = NULL;
 
 // registers.
 
 // pointers.
 
 // constructor.
-    Avril_FSD::WriteEnableForThreadsAt_STACK::WriteEnableForThreadsAt_STACK()
+    OpenAvrilLIB::WriteEnableForThreadsAt_STACK::WriteEnableForThreadsAt_STACK()
     {
         create_ptr_Global();
     }
 
 // destructor.
-    Avril_FSD::WriteEnableForThreadsAt_STACK::~WriteEnableForThreadsAt_STACK()
+    OpenAvrilLIB::WriteEnableForThreadsAt_STACK::~WriteEnableForThreadsAt_STACK()
     {
         delete _ptr_Global;
         delete _ptr_WriteEnable_Control;
     }
 
 // public.
-    void Avril_FSD::WriteEnableForThreadsAt_STACK::initialise_Control(Avril_FSD::WriteEnableForThreadsAt_STACK_Framework* obj)
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK::initialise_Control(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj)
     {
         create_ptr_WriteEnable_Control();
         get_ptr_WriteEnable_Control()->initialise(obj);
     }
-    void Avril_FSD::WriteEnableForThreadsAt_STACK::write_End(Avril_FSD::WriteEnableForThreadsAt_STACK_Framework* obj, int8_t coreId)
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK::write_End(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj, int8_t coreId)
     {
         obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->set_Item_On_list_Of_2ibt_flag_WriteState(coreId, *obj->get_ptr_WriteEnable()->get_ptr_Global()->get_ptr_2bit_flag_write_IDLE());
         obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->set_new_writeCycle_Try_ThreadId_Index(obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->get_Item_On_list_Of_WriteActive_Count_For_ThreadId(coreId) + 1);
@@ -39,7 +39,7 @@
         obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->writeEnable_SortQue(obj);
         obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->set_flag_praisingWrite(false);
     }
-    void Avril_FSD::WriteEnableForThreadsAt_STACK::write_Start(Avril_FSD::WriteEnableForThreadsAt_STACK_Framework* obj, int8_t coreId)
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK::write_Start(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj, int8_t coreId)
     {
         obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->writeEnable_Request(obj, coreId);
         obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->writeQue_Update(obj);
@@ -47,34 +47,34 @@
         obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->writeEnable_Activate(obj, coreId);
     }
     // get.
-    Avril_FSD::WriteEnableForThreadsAt_STACK_Global* Avril_FSD::WriteEnableForThreadsAt_STACK::get_ptr_Global()
+    OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global* OpenAvrilLIB::WriteEnableForThreadsAt_STACK::get_ptr_Global()
     {
         return _ptr_Global;
     }
-    Avril_FSD::WriteEnableForThreadsAt_STACK_Control* Avril_FSD::WriteEnableForThreadsAt_STACK::get_ptr_WriteEnable_Control()
+    OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control* OpenAvrilLIB::WriteEnableForThreadsAt_STACK::get_ptr_WriteEnable_Control()
     {
         return _ptr_WriteEnable_Control;
     }
     // set.
 
 // private.
-    void Avril_FSD::WriteEnableForThreadsAt_STACK::create_ptr_Global()
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK::create_ptr_Global()
     {
-        set_ptr_Global(new class Avril_FSD::WriteEnableForThreadsAt_STACK_Global());
+        set_ptr_Global(new class OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global());
         while (get_ptr_Global() == NULL) {}
     }
-    void Avril_FSD::WriteEnableForThreadsAt_STACK::create_ptr_WriteEnable_Control()
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK::create_ptr_WriteEnable_Control()
     {
-        set_ptr_WriteEnable_Control(new class Avril_FSD::WriteEnableForThreadsAt_STACK_Control(_ptr_Global));
+        set_ptr_WriteEnable_Control(new class OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control(_ptr_Global));
         while (get_ptr_WriteEnable_Control() == NULL) {}
     }
     // get.
     // set.
-    void Avril_FSD::WriteEnableForThreadsAt_STACK::set_ptr_Global(Avril_FSD::WriteEnableForThreadsAt_STACK_Global* global)
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK::set_ptr_Global(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global* global)
     {
         _ptr_Global = global;
     }
-    void Avril_FSD::WriteEnableForThreadsAt_STACK::set_ptr_WriteEnable_Control(Avril_FSD::WriteEnableForThreadsAt_STACK_Control* writeEnableControl)
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK::set_ptr_WriteEnable_Control(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control* writeEnableControl)
     {
         _ptr_WriteEnable_Control = writeEnableControl;
     }
