@@ -1,5 +1,5 @@
-# Avril - LIBRARY Template for Write Enable For Threads At Stack.
-## Request, Wait, Write for Threads at Stack Control, Dynamic Link Library.
+# OpenAvrilLIB
+## .DLL Library Template - Request, Wait, Write for Threads at STACK.
 
 ### Using C++
 
