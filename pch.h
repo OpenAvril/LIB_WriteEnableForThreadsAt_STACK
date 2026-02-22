@@ -9,6 +9,11 @@
 
 // add headers that you want to pre-compile here
 #include "framework.h"
+#include <cstdint>
+#include <cstddef>
+#include <array>
+#include <vector>
+#include <list>
 #include "WriteEnableForThreadsAt_STACK_Framework.h"
 #include "WriteEnableForThreadsAt_STACK_Global.h"
 #include "WriteEnableForThreadsAt_STACK.h"

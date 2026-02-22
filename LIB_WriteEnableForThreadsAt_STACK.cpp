@@ -2,31 +2,32 @@
 #include "framework.h"
 #include "LIB_WriteEnableForThreadsAt_STACK.h"
 
-Avril_FSD::WriteEnableForThreadsAt_STACK_Framework* ptr_WriteEnableForThreadsAt_STACK_Framework = NULL;
+Avril_FSD::WriteEnableForThreadsAt_STACK_Framework* _ptr_WriteEnableForThreadsAt_STACK_Framework = NULL;
 
 Avril_FSD::Library_WriteEnableForThreadsAt_STACK::Library_WriteEnableForThreadsAt_STACK()
 {
 
 }
-void* Avril_FSD::Library_WriteEnableForThreadsAt_STACK::Initialise_WriteEnable()
+void* Avril_FSD::Library_WriteEnableForThreadsAt_STACK::create_Program()
 {
-    Set_writeEnable(new class Avril_FSD::WriteEnableForThreadsAt_STACK_Framework());
-    while (Get_Framework_WriteEnable() == NULL) {}
-    return (void*)Get_Framework_WriteEnable();
+    set_ptr_Framework(new class Avril_FSD::WriteEnableForThreadsAt_STACK_Framework());
+    while (get_ptr_Framework() == NULL) {}
+    get_ptr_Framework()->initialise(get_ptr_Framework());
+    return (void*)get_ptr_Framework();
 }
-void Avril_FSD::Library_WriteEnableForThreadsAt_STACK::Write_End(Avril_FSD::WriteEnableForThreadsAt_STACK_Framework* obj, unsigned char coreId)
+void Avril_FSD::Library_WriteEnableForThreadsAt_STACK::write_End(Avril_FSD::WriteEnableForThreadsAt_STACK_Framework* obj, int8_t coreId)
 {
-    obj->Get_writeEnable()->Write_End(obj, coreId);
+    obj->get_ptr_WriteEnable()->write_End(obj, coreId);
 }
-void Avril_FSD::Library_WriteEnableForThreadsAt_STACK::Write_Start(Avril_FSD::WriteEnableForThreadsAt_STACK_Framework* obj, unsigned char coreId)
+void Avril_FSD::Library_WriteEnableForThreadsAt_STACK::write_Start(Avril_FSD::WriteEnableForThreadsAt_STACK_Framework* obj, int8_t coreId)
 {
-    obj->Get_writeEnable()->Write_Start(obj, coreId);
+    obj->get_ptr_WriteEnable()->write_Start(obj, coreId);
 }
-Avril_FSD::WriteEnableForThreadsAt_STACK_Framework* Avril_FSD::Library_WriteEnableForThreadsAt_STACK::Get_Framework_WriteEnable()
+Avril_FSD::WriteEnableForThreadsAt_STACK_Framework* Avril_FSD::Library_WriteEnableForThreadsAt_STACK::get_ptr_Framework()
 {
-    return ptr_WriteEnableForThreadsAt_STACK_Framework;
+    return _ptr_WriteEnableForThreadsAt_STACK_Framework;
 }
-void Avril_FSD::Library_WriteEnableForThreadsAt_STACK::Set_writeEnable(Avril_FSD::WriteEnableForThreadsAt_STACK_Framework* writeEnable)
+void Avril_FSD::Library_WriteEnableForThreadsAt_STACK::set_ptr_Framework(Avril_FSD::WriteEnableForThreadsAt_STACK_Framework* writeEnable)
 {
-    ptr_WriteEnableForThreadsAt_STACK_Framework = writeEnable;
+    _ptr_WriteEnableForThreadsAt_STACK_Framework = writeEnable;
 }

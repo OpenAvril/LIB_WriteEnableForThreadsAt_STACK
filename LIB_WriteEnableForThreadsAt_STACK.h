@@ -9,12 +9,12 @@ namespace Avril_FSD
 	class LIBWRITEENABLEFORTHREADSATSTACK_API Library_WriteEnableForThreadsAt_STACK {
 	public:
 		Library_WriteEnableForThreadsAt_STACK();
-		static void* Initialise_WriteEnable();
-		static void Write_End(class WriteEnableForThreadsAt_STACK_Framework* obj, unsigned char coreId);
-		static void Write_Start(class WriteEnableForThreadsAt_STACK_Framework* obj, unsigned char coreId);
+		static void* create_Program();
+		static void write_End(class WriteEnableForThreadsAt_STACK_Framework* obj, int8_t coreId);
+		static void write_Start(class WriteEnableForThreadsAt_STACK_Framework* obj, int8_t coreId);
 
 	private:
-		static class WriteEnableForThreadsAt_STACK_Framework* Get_Framework_WriteEnable();
-		static void Set_writeEnable(class WriteEnableForThreadsAt_STACK_Framework* writeEnable);
+		static class WriteEnableForThreadsAt_STACK_Framework* get_ptr_Framework();
+		static void set_ptr_Framework(class WriteEnableForThreadsAt_STACK_Framework* writeEnable);
 	};
 }
