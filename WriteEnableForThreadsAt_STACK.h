@@ -19,8 +19,8 @@ namespace OpenAvrilLIB
 
         // public.
         void initialise_Control(class WriteEnableForThreadsAt_STACK_Framework* obj);
-        void write_End(class WriteEnableForThreadsAt_STACK_Framework* obj, int8_t coreId);
-        void write_Start(class WriteEnableForThreadsAt_STACK_Framework* obj, int8_t coreId);
+        void write_End(class WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId);
+        void write_Start(class WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId);
         // get.
         class WriteEnableForThreadsAt_STACK_Global* get_ptr_Global();
         class WriteEnableForThreadsAt_STACK_Control* get_ptr_WriteEnable_Control();

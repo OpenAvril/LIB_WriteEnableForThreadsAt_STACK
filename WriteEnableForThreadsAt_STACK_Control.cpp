@@ -8,16 +8,16 @@
     std::list<uint32_t> _list_Of_WriteActive_Count_For_ThreadId = { NULL };
     std::list<uint32_t> _list_Of_WriteIdle_Count_For_ThreadId = { NULL };
     std::list<uint32_t> _list_Of_WriteWait_Count_For_ThreadId = { NULL };
-    int8_t _new_writeCycle_Try_ThreadId_Index = NULL;
-    std::list<int8_t> _que_List_Of_ThreadToWrite = { NULL };
-    int8_t _writeCycle_Try_ThreadId_Index = NULL;
+    uint8_t _new_writeCycle_Try_ThreadId_Index = NULL;
+    std::list<uint8_t> _que_List_Of_ThreadToWrite = { NULL };
+    uint8_t _writeCycle_Try_ThreadId_Index = NULL;
 
 // pointers.
     std::list<std::list<bool>>* _ptr_list_Of_2ibt_flag_WriteState = NULL;
     std::list<uint32_t>* _ptr_list_Of_WriteActive_Count_For_ThreadId = NULL;
     std::list<uint32_t>* _ptr_list_Of_WriteIdle_Count_For_ThreadId = NULL;
     std::list<uint32_t>* _ptr_list_Of_WriteWait_Count_For_ThreadId = NULL;
-    std::list<int8_t>* _ptr_que_List_Of_ThreadToWrite = NULL;
+    std::list<uint8_t>* _ptr_que_List_Of_ThreadToWrite = NULL;
 
 // constructor.
     OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::WriteEnableForThreadsAt_STACK_Control(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global* global)
@@ -46,15 +46,15 @@
     {
         create_list_Of_2ibt_flag_WriteState(obj->get_ptr_WriteEnable()->get_ptr_Global());
     }
-    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::writeEnable_Activate(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj, int8_t coreId)
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::writeEnable_Activate(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId)
     {
         obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->set_Item_On_list_Of_2ibt_flag_WriteState(coreId, obj->get_ptr_WriteEnable()->get_ptr_Global()->get_2bit_flag_write_WAIT());
     }
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::writeEnable_SortQue(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj)
     {
-        for (int8_t index_A = 0; index_A < (obj->get_ptr_WriteEnable()->get_ptr_Global()->get_number_Of_Implemented_Threads() - 1); index_A++)
+        for (uint8_t index_A = 0; index_A < (obj->get_ptr_WriteEnable()->get_ptr_Global()->get_number_Of_Implemented_Threads() - 1); index_A++)
         {
-            for (int8_t index_B = (index_A + 1); index_B < obj->get_ptr_WriteEnable()->get_ptr_Global()->get_number_Of_Implemented_Threads(); index_B++)
+            for (uint8_t index_B = (index_A + 1); index_B < obj->get_ptr_WriteEnable()->get_ptr_Global()->get_number_Of_Implemented_Threads(); index_B++)
             {
                 if (obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->get_Item_On_list_Of_2ibt_flag_WriteState(obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->get_Item_On_QUE_List_Of_ThreadToWrite(index_A)) == obj->get_ptr_WriteEnable()->get_ptr_Global()->get_2bit_flag_write_WRITE())
                 {
@@ -95,7 +95,7 @@
             }
         }
     }
-    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::writeEnable_Request(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj, int8_t coreId)
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::writeEnable_Request(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId)
     {
         while (obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->get_flag_praisingWrite() == true)
         {
@@ -120,7 +120,7 @@
     }
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::writeQue_Update(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj)
     {
-        for (int8_t threadID = 0; threadID < obj->get_ptr_WriteEnable()->get_ptr_Global()->get_number_Of_Implemented_Threads(); threadID++)
+        for (uint8_t threadID = 0; threadID < obj->get_ptr_WriteEnable()->get_ptr_Global()->get_number_Of_Implemented_Threads(); threadID++)
         {
             if (obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->get_Item_On_list_Of_2ibt_flag_WriteState(threadID) == obj->get_ptr_WriteEnable()->get_ptr_Global()->get_2bit_flag_write_IDLE())
             {
@@ -147,39 +147,39 @@
     {
         return _flag_praisingWrite;
     }
-    std::list<bool> OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::get_Item_On_list_Of_2ibt_flag_WriteState(int8_t threadID)
+    std::list<bool> OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::get_Item_On_list_Of_2ibt_flag_WriteState(uint8_t threadID)
     {
         auto temp = get_ptr_list_Of_2ibt_flag_WriteState()->begin();
         std::advance(temp, threadID);
         return *temp;
     }
-    uint32_t OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::get_Item_On_list_Of_WriteActive_Count_For_ThreadId(int8_t threadID)
+    uint32_t OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::get_Item_On_list_Of_WriteActive_Count_For_ThreadId(uint8_t threadID)
     {
         auto temp = get_ptr_list_Of_WriteActive_Count_For_ThreadId()->begin();
         std::advance(temp, threadID);
         return *temp;
     }
-    uint32_t OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::get_Item_On_list_Of_WriteIdle_Count_For_ThreadId(int8_t threadID)
+    uint32_t OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::get_Item_On_list_Of_WriteIdle_Count_For_ThreadId(uint8_t threadID)
     {
         auto temp = get_ptr_list_Of_WriteIdle_Count_For_ThreadId()->begin();
         std::advance(temp, threadID);
         return *temp;
     }
-    uint32_t OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::get_Item_On_list_Of_WriteWait_Count_For_ThreadId(int8_t threadID)
+    uint32_t OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::get_Item_On_list_Of_WriteWait_Count_For_ThreadId(uint8_t threadID)
     {
         auto temp = get_ptr_list_Of_WriteWait_Count_For_ThreadId()->begin();
         std::advance(temp, threadID);
         return *temp;
     }
-    int8_t OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::get_new_writeCycle_Try_ThreadId_Index()
+    uint8_t OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::get_new_writeCycle_Try_ThreadId_Index()
     {
         return _new_writeCycle_Try_ThreadId_Index;
     }
-    int8_t OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::get_Item_On_QUE_List_Of_ThreadToWrite(int8_t slotID)
+    uint8_t OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::get_Item_On_QUE_List_Of_ThreadToWrite(uint8_t slotID)
     {
         return 0;
     }
-    int8_t OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::get_writeCycle_Try_ThreadId_Index()
+    uint8_t OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::get_writeCycle_Try_ThreadId_Index()
     {
         return _writeCycle_Try_ThreadId_Index;
     }
@@ -199,7 +199,7 @@
     {
         return _ptr_list_Of_2ibt_flag_WriteState;
     }
-    std::list<int8_t>* OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::get_ptr_que_List_Of_ThreadToWrite()
+    std::list<uint8_t>* OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::get_ptr_que_List_Of_ThreadToWrite()
     {
         return _ptr_que_List_Of_ThreadToWrite;
     }
@@ -208,41 +208,41 @@
     {
         _flag_praisingWrite = newFlag;
     }
-    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::set_Item_On_list_Of_2ibt_flag_WriteState(int8_t threadID, std::list<bool> newState)
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::set_Item_On_list_Of_2ibt_flag_WriteState(uint8_t threadID, std::list<bool> newState)
     {
         auto temp = get_ptr_list_Of_2ibt_flag_WriteState()->begin();
         std::advance(temp, threadID);
         *temp = newState;
     }
-    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::set_Item_On_list_Of_WriteActive_Count_For_ThreadId(int8_t threadID, uint32_t newCount)
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::set_Item_On_list_Of_WriteActive_Count_For_ThreadId(uint8_t threadID, uint32_t newCount)
     {
         auto temp = get_ptr_list_Of_WriteActive_Count_For_ThreadId()->begin();
         std::advance(temp, threadID);
         *temp = newCount;
     }
-    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::set_Item_On_list_Of_WriteIdle_Count_For_ThreadId(int8_t threadID, uint32_t newCount)
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::set_Item_On_list_Of_WriteIdle_Count_For_ThreadId(uint8_t threadID, uint32_t newCount)
     {
         auto temp = get_ptr_list_Of_WriteIdle_Count_For_ThreadId()->begin();
         std::advance(temp, threadID);
         *temp = newCount;
     }
-    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::set_Item_On_list_Of_WriteWait_Count_For_ThreadId(int8_t threadID, uint32_t newCount)
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::set_Item_On_list_Of_WriteWait_Count_For_ThreadId(uint8_t threadID, uint32_t newCount)
     {
         auto temp = get_ptr_list_Of_WriteWait_Count_For_ThreadId()->begin();
         std::advance(temp, threadID);
         *temp = newCount;
     }
-    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::set_Item_On_QUE_List_Of_ThreadToWrite(int8_t slotID, int8_t threadID)
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::set_Item_On_QUE_List_Of_ThreadToWrite(uint8_t slotID, uint8_t threadID)
     {
         auto temp = get_ptr_que_List_Of_ThreadToWrite()->begin();
         std::advance(temp, threadID);
         *temp = threadID;
     }
-    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::set_new_writeCycle_Try_ThreadId_Index(int8_t newValue)
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::set_new_writeCycle_Try_ThreadId_Index(uint8_t newValue)
     {
         _new_writeCycle_Try_ThreadId_Index = newValue;
     }
-    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::set_writeCycle_Try_ThreadId_Index(int8_t newValue)
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::set_writeCycle_Try_ThreadId_Index(uint8_t newValue)
     {
         _writeCycle_Try_ThreadId_Index = newValue;
     }
@@ -259,31 +259,31 @@
     }
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::create_list_Of_WriteActive_Count_For_ThreadId()
     {
-        std::list<int8_t> _list_Of_WriteActive_Count_For_ThreadId = { uint32_t(0), uint32_t(0), uint32_t(0), uint32_t(0) };//NUMBER OF THREADS
+        std::list<uint8_t> _list_Of_WriteActive_Count_For_ThreadId = { uint32_t(0), uint32_t(0), uint32_t(0), uint32_t(0) };//NUMBER OF THREADS
         create_ptr_list_Of_WriteActive_Count_For_ThreadId();
     }
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::create_list_Of_WriteIdle_Count_For_ThreadId()
     {
-                std::list<int8_t> _list_Of_WriteIdle_Count_For_ThreadId = { uint32_t(0), uint32_t(0), uint32_t(0), uint32_t(0) };//NUMBER OF THREADS
+                std::list<uint8_t> _list_Of_WriteIdle_Count_For_ThreadId = { uint32_t(0), uint32_t(0), uint32_t(0), uint32_t(0) };//NUMBER OF THREADS
         create_ptr_list_Of_WriteActive_Count_For_ThreadId();
     }
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::create_list_Of_WriteWait_Count_For_ThreadId()
     {
-        std::list<int8_t> _list_Of_WriteWait_Count_For_ThreadId = { int8_t(0), int8_t(0), int8_t(0), int8_t(0) };//NUMBER OF THREADS
+        std::list<uint8_t> _list_Of_WriteWait_Count_For_ThreadId = { uint8_t(0), uint8_t(0), uint8_t(0), uint8_t(0) };//NUMBER OF THREADS
         create_ptr_list_Of_WriteActive_Count_For_ThreadId();
     }
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::create_new_writeCycle_Try_ThreadId_Index()
     {
-        set_new_writeCycle_Try_ThreadId_Index(int8_t(255));
+        set_new_writeCycle_Try_ThreadId_Index(uint8_t(255));
     }
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::create_que_List_Of_ThreadToWrite()
     {
-        std::list<int8_t> _que_List_Of_ThreadToWrite = { int8_t(0), int8_t(0), int8_t(0), int8_t(0) };//NUMBER OF THREADS
+        std::list<uint8_t> _que_List_Of_ThreadToWrite = { uint8_t(0), uint8_t(0), uint8_t(0), uint8_t(0) };//NUMBER OF THREADS
         create_ptr_que_List_Of_ThreadToWrite();
     }
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::create_writeCycle_Try_ThreadId_Index()
     {
-        set_writeCycle_Try_ThreadId_Index(int8_t(255));
+        set_writeCycle_Try_ThreadId_Index(uint8_t(255));
     }
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::create_ptr_list_Of_WriteActive_Count_For_ThreadId()
     {
@@ -305,7 +305,7 @@
     {
         set_ptr_que_List_Of_ThreadToWrite(&_que_List_Of_ThreadToWrite);
     }
-    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::dynamicStagger(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj, int8_t coreId)
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::dynamicStagger(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId)
     {
         if (obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->get_writeCycle_Try_ThreadId_Index() == coreId)
         {
@@ -320,7 +320,7 @@
             }
         }
     }
-    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::writeEnable_ShiftQueValues(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj, int8_t coreId_A, int8_t coreId_B)
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::writeEnable_ShiftQueValues(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId_A, uint8_t coreId_B)
     {
         int temp_A = int(0);
         temp_A = obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->get_Item_On_list_Of_WriteActive_Count_For_ThreadId(coreId_A);
@@ -335,7 +335,7 @@
         obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->set_Item_On_list_Of_WriteWait_Count_For_ThreadId(coreId_A, obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->get_Item_On_list_Of_WriteWait_Count_For_ThreadId(coreId_B));
         obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->set_Item_On_list_Of_WriteWait_Count_For_ThreadId(coreId_B, temp_A);
 
-        int8_t temp_B = int8_t(0);
+        uint8_t temp_B = uint8_t(0);
         temp_B = obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->get_Item_On_QUE_List_Of_ThreadToWrite(coreId_A);
         obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->set_Item_On_QUE_List_Of_ThreadToWrite(coreId_A, obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->get_Item_On_QUE_List_Of_ThreadToWrite(coreId_B));
         obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->set_Item_On_QUE_List_Of_ThreadToWrite(coreId_B, temp_B);
@@ -358,7 +358,7 @@
     {
         _ptr_list_Of_2ibt_flag_WriteState = newPtr;
     }
-    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::set_ptr_que_List_Of_ThreadToWrite(std::list<int8_t>* newPtr)
+    void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control::set_ptr_que_List_Of_ThreadToWrite(std::list<uint8_t>* newPtr)
     {
         _ptr_que_List_Of_ThreadToWrite = newPtr;
     }
