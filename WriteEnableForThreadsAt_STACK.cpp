@@ -25,7 +25,6 @@
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK::initialise_Control(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj)
     {
         create_ptr_WriteEnable_Control();
-        get_ptr_WriteEnable_Control()->initialise(obj);
     }
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK::write_End(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId)
     {
@@ -41,7 +40,7 @@
     }
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK::write_Start(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId)
     {
-        obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->writeEnable_Request(obj, coreId);
+        obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->writeEnable_ReQUEst(obj, coreId);
         obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->writeQue_Update(obj);
         obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->writeEnable_SortQue(obj);
         obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->writeEnable_Activate(obj, coreId);

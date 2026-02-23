@@ -18,7 +18,10 @@ namespace OpenAvrilLIB
         ~WriteEnableForThreadsAt_STACK_Global();
 
 // public.
-        void initialise();
+        void initialise_Item_Of_2bit_flag_write_IDLE(uint8_t slot, bool newINITIALISED_FlagBit);
+        void initialise_Item_Of_2bit_flag_write_WAIT(uint8_t slot, bool newINITIALISED_FlagBit);
+        void initialise_Item_Of_2bit_flag_write_WRITE(uint8_t slot, bool newINITIALISED_FlagBit);
+        void initialise_number_Of_Implemented_Threads(uint8_t* newValue);
     // get.
         std::list<bool>* get_ptr_2bit_flag_write_IDLE();
         std::list<bool>* get_ptr_2bit_flag_write_WAIT();
@@ -27,17 +30,13 @@ namespace OpenAvrilLIB
     // set.
 
 // private.
-        void create_2bit_flag_write_IDLE(bool* newDEAFULT_FlagBit);
-        void create_2bit_flag_write_WAIT(bool* newDEAFULT_FlagBit);
-        void create_2bit_flag_write_WRITE(bool* newDEAFULT_FlagBit);
+        void create_2bit_flag_write_IDLE(bool newDEAFULT_FlagBit);
+        void create_2bit_flag_write_WAIT(bool newDEAFULT_FlagBit);
+        void create_2bit_flag_write_WRITE(bool newDEAFULT_FlagBit);
         void create_number_Of_Implemented_Threads(uint8_t* newDEFAULT_Value);
         void create_ptr_2bit_flag_write_IDLE();
         void create_ptr_2bit_flag_write_WAIT();
         void create_ptr_2bit_flag_write_WRITE();
-        void initialise_Item_Of_2bit_flag_write_IDLE(uint8_t slot, bool* newINITIALISED_FlagBit);
-        void initialise_Item_Of_2bit_flag_write_WAIT(uint8_t slot, bool* newINITIALISED_FlagBit);
-        void initialise_Item_Of_2bit_flag_write_WRITE(uint8_t slot, bool* newINITIALISED_FlagBit);
-        void initialise_number_Of_Implemented_Threads(uint8_t* newValue);
     // get.
         std::list<bool> get_2bit_flag_write_IDLE();
         std::list<bool> get_2bit_flag_write_WAIT();
