@@ -22,21 +22,43 @@ Version 17.13.4
 #define LIBWRITEENABLEFORTHREADSATSERVERINPUTACTION_API __declspec(dllimport)
 #endif
 
-
-namespace Avril_FSD
+namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION
 {
-	// This class is exported from the dll
-	class LIBWRITEENABLEFORTHREADSATSERVERINPUTACTION_API CLIBWriteEnableForThreadsAtSERVERINPUTACTION {
+	class LIBWRITEENABLEFORTHREADSATSERVERINPUTACTION_API CLIDWriteEnableForThreadsAtSERVERINPUTACTION 
+	{
+// classes.
+
+// registers.
+
+// pointers.
+
 	public:
-		CLIBWriteEnableForThreadsAtSERVERINPUTACTION(void);
-		// TODO: add your methods here.
-		static void* Initialise_WriteEnable();
-		static void Write_End(class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* obj, unsigned char coreId);
-		static void Write_Start(class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* obj, unsigned char coreId);
+// constructor.
+		CLIDWriteEnableForThreadsAtSERVERINPUTACTION();
+
+// destructor.
+
+// public.
+	// dynamic.
+		static void* create_Program();
+		static void write_End(class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* obj, uint8_t coreId);
+		static void write_Start(class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* obj, uint8_t coreId);
+		// get.
+		static class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* get_ptr_Framework();
+		// set.
+	// static.
+		// get.
+		// set.
 
 	private:
-		static class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* Get_Framework_WriteEnable();
-		static void Set_writeEnable(class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* writeEnable);
+// private.
+	// dynamic.
+		// get.
+		// set.
+	// static.
+		// get.
+		// set.
+		static void set_ptr_Framework(class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* writeEnable);
 	};
 }
 ````
@@ -46,38 +68,60 @@ namespace Avril_FSD
 #include "framework.h"
 #include "LIB_WriteEnableForThreadsAt_SERVERINPUTACTION.h"
 
-Avril_FSD::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* ptr_WriteEnableForThreadsAt_SERVERINPUTACTION_Framework = NULL;
+// classes.
+	OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* _ptr_Framework_WriteEnableForThreadsAt_SERVERINPUTACTION = NULL;
 
-// This is an example of an exported variable
-LIBWRITEENABLEFORTHREADSATSERVERINPUTACTION_API int nLIBWriteEnableForThreadsAtSERVERINPUTACTION=0;
+// registers.
 
-// This is an example of an exported function.
-LIBWRITEENABLEFORTHREADSATSERVERINPUTACTION_API int fnLIBWriteEnableForThreadsAtSERVERINPUTACTION(void)
-{
-    return 0;
-}
-void* Avril_FSD::CLIBWriteEnableForThreadsAtSERVERINPUTACTION::Initialise_WriteEnable()
-{
-    Set_writeEnable(new class Avril_FSD::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework());
-    while (Get_Framework_WriteEnable() == NULL) {}
-    return (void*)Get_Framework_WriteEnable();
-}
-void Avril_FSD::CLIBWriteEnableForThreadsAtSERVERINPUTACTION::Write_End(Avril_FSD::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* obj, unsigned char coreId)
-{
-    obj->Get_writeEnable()->Write_End(obj, coreId);
-}
-void Avril_FSD::CLIBWriteEnableForThreadsAtSERVERINPUTACTION::Write_Start(Avril_FSD::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* obj, unsigned char coreId)
-{
-    obj->Get_writeEnable()->Write_Start(obj, coreId);
-}
-Avril_FSD::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* Avril_FSD::CLIBWriteEnableForThreadsAtSERVERINPUTACTION::Get_Framework_WriteEnable()
-{
-    return ptr_WriteEnableForThreadsAt_SERVERINPUTACTION_Framework;
-}
-void Avril_FSD::CLIBWriteEnableForThreadsAtSERVERINPUTACTION::Set_writeEnable(Avril_FSD::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* writeEnable)
-{
-    ptr_WriteEnableForThreadsAt_SERVERINPUTACTION_Framework = writeEnable;
-}
+// pointers.
+
+// constructor.
+	OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION()
+	{
+
+	}
+
+// destructor.
+
+// public.
+	// dynamic.
+	void* OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::create_Program()
+	{
+		set_ptr_Framework(new class OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework());
+		while (get_ptr_Framework() == NULL) {}
+		get_ptr_Framework()->initialise(get_ptr_Framework());
+		return (void*)get_ptr_Framework();
+	}
+	void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::write_End(OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* obj, uint8_t coreId)
+	{
+		obj->get_ptr_WriteEnable()->write_End(obj, coreId);
+	}
+	void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::write_Start(OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* obj, uint8_t coreId)
+	{
+		obj->get_ptr_WriteEnable()->write_Start(obj, coreId);
+	}
+		// get.
+	OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework * OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::get_ptr_Framework()
+	{
+		return _ptr_Framework_WriteEnableForThreadsAt_SERVERINPUTACTION;
+	}
+
+		// set.
+	// static.
+		// get.
+		// set.
+
+// private.
+	// dynamic.
+		// get.
+		// set.
+	// static.
+		// get.
+		// set.
+	void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::set_ptr_Framework(OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* writeEnable)
+	{
+		_ptr_Framework_WriteEnableForThreadsAt_SERVERINPUTACTION = writeEnable;
+	}
 ````
 #### LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.h
 ````
@@ -87,54 +131,106 @@ void Avril_FSD::CLIBWriteEnableForThreadsAtSERVERINPUTACTION::Set_writeEnable(Av
 #define LIBWRITEENABLEFORTHREADSATSERVEROUTPUTRECIEVE_API __declspec(dllimport)
 #endif
 
-namespace Avril_FSD
+namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE
 {
-	class LIBWRITEENABLEFORTHREADSATSERVEROUTPUTRECIEVE_API Library_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE {
+	class LIBWRITEENABLEFORTHREADSATSERVEROUTPUTRECIEVE_API CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE 
+	{
+// classes.
+
+// registers.
+
+// pointers.
+
 	public:
-		Library_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE();
-		static void* Initialise_WriteEnable();
-		static void Write_End(class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, unsigned char coreId);
-		static void Write_Start(class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, unsigned char coreId);
+// constructor.
+		CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE();
+
+// destructor.
+
+// public.
+	// dynamic.
+		static void* create_Program();
+		static void write_End(class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t coreId);
+		static void write_Start(class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t coreId);
+		// get.
+		static class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* get_ptr_Framework();
+		// set.
+	// static.
+		// get.
+		// set.
 
 	private:
-		static class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* Get_Framework_WriteEnable();
-		static void Set_writeEnable(class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* writeEnable);
+// private.
+	// dynamic.
+		// get.
+		// set.
+	// static.
+		// get.
+		// set.
+		static void set_ptr_Framework(class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* writeEnable);
 	};
 }
 ````
 #### LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.cpp
 ````
 #include "pch.h"
+#include "framework.h"
 #include "LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.h"
 
-Avril_FSD::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* ptr_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework = NULL;
+// classes.
+	OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* _ptr_Framework_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE = NULL;
 
-Avril_FSD::Library_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::Library_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()
-{
+// registers.
 
-}
-void* Avril_FSD::Library_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::Initialise_WriteEnable()
-{
-    Set_writeEnable(new class Avril_FSD::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework());
-    while (Get_Framework_WriteEnable() == NULL) {}
-    return (void*)Get_Framework_WriteEnable();
-}
-void Avril_FSD::Library_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::Write_End(Avril_FSD::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, unsigned char coreId)
-{
-    obj->Get_writeEnable()->Write_End(obj, coreId);
-}
-void Avril_FSD::Library_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::Write_Start(Avril_FSD::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, unsigned char coreId)
-{
-    obj->Get_writeEnable()->Write_Start(obj, coreId);
-}
-Avril_FSD::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* Avril_FSD::Library_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::Get_Framework_WriteEnable()
-{
-    return ptr_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework;
-}
-void Avril_FSD::Library_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::Set_writeEnable(Avril_FSD::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* writeEnable)
-{
-    ptr_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework = writeEnable;
-}
+// pointers.
+
+// constructor.
+	OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE()
+	{
+
+	}
+
+// destructor.
+
+// public.
+	// dynamic.
+	void* OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::create_Program()
+	{
+		set_ptr_Framework(new class OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework());
+		while (get_ptr_Framework() == NULL) {}
+		get_ptr_Framework()->initialise(get_ptr_Framework());
+		return (void*)get_ptr_Framework();
+	}
+	void OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::write_End(OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t coreId)
+	{
+		obj->get_ptr_WriteEnable()->write_End(obj, coreId);
+	}
+	void OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::write_Start(OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t coreId)
+	{
+		obj->get_ptr_WriteEnable()->write_Start(obj, coreId);
+	}
+		// get.
+	OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework * OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::get_ptr_Framework()
+	{
+		return _ptr_Framework_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE;
+	}
+
+		// set.
+	// static.
+		// get.
+		// set.
+
+// private.
+	// dynamic.
+		// get.
+		// set.
+	// static.
+		// get.
+		// set.
+	void OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::set_ptr_Framework(OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* writeEnable)
+	{
+		_ptr_Framework_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE = writeEnable;
+	}
 ````
 
 ### C#
@@ -144,41 +240,41 @@ void Avril_FSD::Library_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::Set_writeEn
 using System.Security;
 using System;
 
-namespace Avril_FSD
+namespace OpenAvrilCLIB
 {
     [SuppressUnmanagedCodeSecurity]
     public static class Library_For_WriteEnableForThreadsAt_CLIENTINPUTACTION
     {
-        [DllImport("LIBWriteEnableForThreadsAtCLIENTINPUTACTION.dll", EntryPoint = "?Initialise_WriteEnable@Library_WriteEnableForThreadsAt_CLIENTINPUTACTION@Avril_FSD@@SAPAXXZ")]
-        public static extern IntPtr Initialise_WriteEnable();
+        [DllImport("LIBWriteEnableForThreadsAtCLIENTINPUTACTION.dll", EntryPoint = "")]
+        public static extern IntPtr create_Program();
 
-        [DllImport("LIBWriteEnableForThreadsAtCLIENTINPUTACTION.dll", EntryPoint = "?Write_End@Library_WriteEnableForThreadsAt_CLIENTINPUTACTION@Avril_FSD@@SAXPAVWriteEnableForThreadsAt_CLIENTINPUTACTION_Framework@2@E@Z")]
-        public static extern void Write_End(IntPtr obj, byte coreId);
+        [DllImport("LIBWriteEnableForThreadsAtCLIENTINPUTACTION.dll", EntryPoint = "")]
+        public static extern void write_End(IntPtr obj, byte coreId);
 
-        [DllImport("LIBWriteEnableForThreadsAtCLIENTINPUTACTION.dll", EntryPoint = "?Write_Start@Library_WriteEnableForThreadsAt_CLIENTINPUTACTION@Avril_FSD@@SAXPAVWriteEnableForThreadsAt_CLIENTINPUTACTION_Framework@2@E@Z")]
-        public static extern void Write_Start(IntPtr obj, byte coreId);
+        [DllImport("LIBWriteEnableForThreadsAtCLIENTINPUTACTION.dll", EntryPoint = "")]
+        public static extern void write_Start(IntPtr obj, byte coreId);
     }
 }
 ````
 #### IMPORT_LIB_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE.cs
 ````
-using System;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 using System.Security;
+using System;
 
-namespace Avril_FSD
+namespace OpenAvrilCLIB
 {
     [SuppressUnmanagedCodeSecurity]
     public static class Library_For_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE
     {
-        [DllImport("LIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE.dll", EntryPoint = "?Initialise_WriteEnable@CLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE@Avril_FSD@@SAPAXXZ")]
-        public static extern IntPtr Initialise_WriteEnable();
+        [DllImport("LIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE.dll", EntryPoint = "")]
+        public static extern IntPtr create_Program();
 
-        [DllImport("LIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE.dll", EntryPoint = "?Write_End@CLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE@Avril_FSD@@SAXPAVWriteEnableForThreadsAt_STACK_Framework@2@E@Z")]
-        public static extern void Write_End(IntPtr obj, byte coreId);
+        [DllImport("LIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE.dll", EntryPoint = "")]
+        public static extern void write_End(IntPtr obj, byte coreId);
 
-        [DllImport("LIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE.dll", EntryPoint = "?Write_Start@CLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE@Avril_FSD@@SAXPAVWriteEnableForThreadsAt_STACK_Framework@2@E@Z")]
-        public static extern void Write_Start(IntPtr obj, byte coreId);
+        [DllImport("LIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE.dll", EntryPoint = "")]
+        public static extern void write_Start(IntPtr obj, byte coreId);
     }
 }
 ````
