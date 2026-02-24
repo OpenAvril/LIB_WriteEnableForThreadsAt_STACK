@@ -22,7 +22,7 @@ namespace OpenAvrilLIB
 
 // public.
 	// dynamic.
-		static void* create_Program();
+		static void* generate_Program();
 		static void write_End(class WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId);
 		static void write_Start(class WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId);
 		// get.
@@ -38,7 +38,9 @@ namespace OpenAvrilLIB
 		// get.
 		// set.
 	// static.
+		static void create_Framework();
 		// get.
+		static WriteEnableForThreadsAt_STACK_Framework* stat_get_ptr_Framework();
 		// set.
 		static void set_ptr_Framework(class WriteEnableForThreadsAt_STACK_Framework* writeEnable);
 	};
