@@ -96,30 +96,34 @@
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global::create_2bit_flag_write_WAIT(bool newDEAFULT_FlagBit)
     {
         std::list<bool> _2bit_flag_write_WAIT = { newDEAFULT_FlagBit, newDEAFULT_FlagBit };
-        create_ptr_2bit_flag_write_IDLE();
-        while (Get_ptr_2bit_flag_write_IDLE() == NULL) {}
+        create_ptr_2bit_flag_write_WAIT();
+        while (Get_ptr_2bit_flag_write_WAIT() == NULL) {}
     }
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global::create_2bit_flag_write_WRITE(bool newDEAFULT_FlagBit)
     {
         std::list<bool> _2bit_flag_write_WRITE = { newDEAFULT_FlagBit, newDEAFULT_FlagBit };
-        create_ptr_2bit_flag_write_IDLE();
-        while (Get_ptr_2bit_flag_write_IDLE() == NULL) {}
+        create_ptr_2bit_flag_write_WRITE();
+        while (Get_ptr_2bit_flag_write_WRITE() == NULL) {}
     }
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global::create_number_Of_Implemented_Threads(uint8_t* newDEFAULT_Value)
     {
         set_number_Of_Implemented_Threads(*newDEFAULT_Value);
+        while (get_ptr_number_Of_Implemented_Threads() == NULL) {}
     }
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global::create_ptr_2bit_flag_write_IDLE()
     {
         set_ptr_2bit_flag_write_IDLE(&_2bit_flag_write_IDLE);
+        while (Get_ptr_2bit_flag_write_IDLE() == NULL) {}
     }
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global::create_ptr_2bit_flag_write_WAIT()
     {
         set_ptr_2bit_flag_write_WAIT(&_2bit_flag_write_WAIT);
+        while (Get_ptr_2bit_flag_write_WAIT() == NULL) {}
     }
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global::create_ptr_2bit_flag_write_WRITE()
     {
         set_ptr_2bit_flag_write_WRITE(&_2bit_flag_write_WRITE);
+        while (Get_ptr_2bit_flag_write_WRITE() == NULL) {}
     }
 
         // get.
@@ -134,6 +138,10 @@
     std::list<bool>* OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global::Get_ptr_2bit_flag_write_WRITE()
     {
         return _ptr_2bit_flag_write_WRITE;
+    }
+    uint8_t* OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global::get_ptr_number_Of_Implemented_Threads()
+    {
+        return _ptr_number_Of_Implemented_Threads;
     }
         // set.
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global::set_Item_Of_2bit_flag_write_IDLE(uint8_t slot, bool newValue)

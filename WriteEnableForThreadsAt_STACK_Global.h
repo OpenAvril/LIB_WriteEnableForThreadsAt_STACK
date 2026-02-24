@@ -49,6 +49,7 @@ namespace OpenAvrilLIB
         static std::list<bool>* Get_ptr_2bit_flag_write_IDLE();
         static std::list<bool>* Get_ptr_2bit_flag_write_WAIT();
         static std::list<bool>* Get_ptr_2bit_flag_write_WRITE();
+        static uint8_t* get_ptr_number_Of_Implemented_Threads();
         // set.
         static void set_Item_Of_2bit_flag_write_IDLE(uint8_t slot, bool newValue);
         static void set_Item_Of_2bit_flag_write_WAIT(uint8_t slot, bool newValue);
