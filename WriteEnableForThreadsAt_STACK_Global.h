@@ -19,9 +19,9 @@ namespace OpenAvrilLIB
 
 // public.
     // dynamic.
-        void initialise_Item_Of_2bit_flag_write_IDLE(uint8_t slot, bool newINITIALISED_FlagBit);
-        void initialise_Item_Of_2bit_flag_write_WAIT(uint8_t slot, bool newINITIALISED_FlagBit);
-        void initialise_Item_Of_2bit_flag_write_WRITE(uint8_t slot, bool newINITIALISED_FlagBit);
+        void initialise_Item_Of_2bit_flag_write_IDLE(class WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t slot, bool newINITIALISED_FlagBit);
+        void initialise_Item_Of_2bit_flag_write_WAIT(class WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t slot, bool newINITIALISED_FlagBit);
+        void initialise_Item_Of_2bit_flag_write_WRITE(class WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t slot, bool newINITIALISED_FlagBit);
         void initialise_number_Of_Implemented_Threads(uint8_t* newValue);
         // get.
         std::list<bool>* get_ptr_2bit_flag_write_IDLE();

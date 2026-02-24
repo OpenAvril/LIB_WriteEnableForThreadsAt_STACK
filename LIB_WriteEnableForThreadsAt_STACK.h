@@ -43,28 +43,3 @@ namespace OpenAvrilLIB
 		static void set_ptr_Framework(class WriteEnableForThreadsAt_STACK_Framework* writeEnable);
 	};
 }
-// classes.
-
-// registers.
-
-// pointers.
-
-// constructor.
-
-// destructor.
-
-// public.
-	// dynamic.
-		// get.
-		// set.
-	// static.
-		// get.
-		// set.
-
-// private.
-	// dynamic.
-		// get.
-		// set.
-	// static.
-		// get.
-		// set.

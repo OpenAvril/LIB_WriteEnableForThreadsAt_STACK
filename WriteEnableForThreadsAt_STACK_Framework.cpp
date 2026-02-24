@@ -1,5 +1,6 @@
 #include "pch.h"
 
+
 // classes.
 	class OpenAvrilLIB::WriteEnableForThreadsAt_STACK* _ptr_WriteEnable = NULL;
 
@@ -23,36 +24,46 @@
 	// dynamic.
 	void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework::initialise(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj)
 	{
-		std::list<bool> newINITIALISED_boolList = { false, false };
-		std::list<bool>* ptr_newINITIALISED_boolList = &newINITIALISED_boolList;
+		std::list<bool>* ptr_newINITIALISED_boolList = new std::list<bool>(true);
 		while (ptr_newINITIALISED_boolList == NULL) {}
-		obj->get_ptr_WriteEnable()->get_ptr_Global()->initialise_Item_Of_2bit_flag_write_IDLE(0, ptr_newINITIALISED_boolList);
-		newINITIALISED_boolList = { false, true };
-		obj->get_ptr_WriteEnable()->get_ptr_Global()->initialise_Item_Of_2bit_flag_write_WAIT(1, ptr_newINITIALISED_boolList);
-		newINITIALISED_boolList = { true, false };
-		obj->get_ptr_WriteEnable()->get_ptr_Global()->initialise_Item_Of_2bit_flag_write_WRITE(2, ptr_newINITIALISED_boolList);
+		*ptr_newINITIALISED_boolList = { false, false };
+		obj->get_ptr_WriteEnable()->get_ptr_Global()->initialise_Item_Of_2bit_flag_write_IDLE(obj, 0, ptr_newINITIALISED_boolList);
+		*ptr_newINITIALISED_boolList = { false, true };
+		obj->get_ptr_WriteEnable()->get_ptr_Global()->initialise_Item_Of_2bit_flag_write_WAIT(obj, 1, ptr_newINITIALISED_boolList);
+		*ptr_newINITIALISED_boolList = { true, false };
+		obj->get_ptr_WriteEnable()->get_ptr_Global()->initialise_Item_Of_2bit_flag_write_WRITE(obj, 2, ptr_newINITIALISED_boolList);
 		delete ptr_newINITIALISED_boolList;
-		uint8_t* newINITIALISED_uint32_t1 = new uint8_t(4);
+
+		uint8_t* newINITIALISED_uint32_t1 = new uint8_t(UINT8_MAX);
+		*newINITIALISED_uint32_t1 = 4;//NUMBER OF THREADS
 		obj->get_ptr_WriteEnable()->get_ptr_Global()->initialise_number_Of_Implemented_Threads(newINITIALISED_uint32_t1);
 		delete newINITIALISED_uint32_t1;
+		
 		obj->get_ptr_WriteEnable()->initialise_Control(obj);
+		
 		bool* newINITIALISED_bool = new bool(false);
-		obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->initialise_flag_praisingWrite(&newINITIALISED_bool);
+		obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->initialise_flag_praisingWrite(obj, &newINITIALISED_bool);
 		delete newINITIALISED_bool;
-		uint8_t* newINITIALISED_uint8_t2 = new uint8_t(0);
+
+		uint8_t* newINITIALISED_uint8_t2 = new uint8_t(UINT8_MAX);
+		*newINITIALISED_uint8_t2 = 0;
 		for (uint8_t concurrentThreadID = 0; concurrentThreadID < (obj->get_ptr_WriteEnable()->get_ptr_Global()->get_number_Of_Implemented_Threads() - 1); concurrentThreadID++)
 		{
-			obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->initialise_Item_On_QUE_List_Of_ThreadToWrite(concurrentThreadID, &concurrentThreadID);
+			obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->initialise_Item_On_QUE_List_Of_ThreadToWrite(obj, concurrentThreadID, &concurrentThreadID);
 		}
-		obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->initialise_writeCycle_Try_ThreadId_Index(newINITIALISED_uint8_t2);
-		obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->initialise_new_writeCycle_Try_ThreadId_Index(newINITIALISED_uint8_t2);
+		obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->initialise_writeCycle_Try_ThreadId_Index(obj, newINITIALISED_uint8_t2);
+		*newINITIALISED_uint8_t2 = 1;
+		obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->initialise_new_writeCycle_Try_ThreadId_Index(obj, newINITIALISED_uint8_t2);
 		delete newINITIALISED_uint8_t2;
-		uint32_t* newINITIALISED_uint32_t = new uint32_t(0);
-		for (uint8_t concurrentThreadID = 0; concurrentThreadID < (obj->get_ptr_WriteEnable()->get_ptr_Global()->get_number_Of_Implemented_Threads() - 1); concurrentThreadID++)
+		
+		uint32_t* newINITIALISED_uint32_t = new uint32_t(UINT32_MAX);
+		while (newINITIALISED_uint32_t == NULL) {}
+		*newINITIALISED_uint32_t = 0;
+		for (uint8_t concurrentThreadID = 0; concurrentThreadID < (uint8_t)(obj->get_ptr_WriteEnable()->get_ptr_Global()->get_number_Of_Implemented_Threads() - 1); concurrentThreadID++)
 		{
-			obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->initialise_Item_On_list_Of_WriteActive_Count_For_ThreadId(concurrentThreadID, newINITIALISED_uint32_t);
-			obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->initialise_Item_On_list_Of_WriteIdle_Count_For_ThreadId(concurrentThreadID, newINITIALISED_uint32_t);
-			obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->initialise_Item_On_list_Of_WriteWait_Count_For_ThreadId(concurrentThreadID, newINITIALISED_uint32_t);
+			obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->initialise_Item_On_list_Of_WriteActive_Count_For_ThreadId(obj, concurrentThreadID, newINITIALISED_uint32_t);
+			obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->initialise_Item_On_list_Of_WriteIdle_Count_For_ThreadId(obj, concurrentThreadID, newINITIALISED_uint32_t);
+			obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->initialise_Item_On_list_Of_WriteWait_Count_For_ThreadId(obj, concurrentThreadID, newINITIALISED_uint32_t);
 		}
 		delete newINITIALISED_uint32_t;
 	}
