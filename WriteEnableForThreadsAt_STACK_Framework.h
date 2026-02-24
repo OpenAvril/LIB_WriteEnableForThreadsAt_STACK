@@ -35,8 +35,8 @@ namespace OpenAvrilLIB
     // static.
         static void create_ptr_WriteEnable();
         // get.
-        static class WriteEnableForThreadsAt_STACK* Get_ptr_WriteEnable();
+        static class WriteEnableForThreadsAt_STACK* stat_get_ptr_WriteEnable();
         // set.
-        static void set_ptr_WriteEnable(class WriteEnableForThreadsAt_STACK* writeEnable);
+        static void stat_set_ptr_WriteEnable(class WriteEnableForThreadsAt_STACK* writeEnable);
     };
 }

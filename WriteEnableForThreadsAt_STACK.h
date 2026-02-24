@@ -39,10 +39,10 @@ namespace OpenAvrilLIB
         static void create_ptr_Global();
         static void create_ptr_WriteEnable_Control();
         // get.
-        static class WriteEnableForThreadsAt_STACK_Global* Get_ptr_Global();
-        static class WriteEnableForThreadsAt_STACK_Control* Get_ptr_WriteEnable_Control();
+        static class WriteEnableForThreadsAt_STACK_Global* stat_get_ptr_Global();
+        static class WriteEnableForThreadsAt_STACK_Control* stat_get_ptr_WriteEnable_Control();
         // set.
-        static void set_ptr_Global(class WriteEnableForThreadsAt_STACK_Global* global);
-        static void set_ptr_WriteEnable_Control(class WriteEnableForThreadsAt_STACK_Control* writeEnableControl);
+        static void stat_set_ptr_Global(class WriteEnableForThreadsAt_STACK_Global* global);
+        static void stat_set_ptr_WriteEnable_Control(class WriteEnableForThreadsAt_STACK_Control* writeEnableControl);
     };
 }
