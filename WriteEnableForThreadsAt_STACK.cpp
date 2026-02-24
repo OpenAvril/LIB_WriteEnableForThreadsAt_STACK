@@ -20,8 +20,8 @@
         delete _ptr_Global;
         delete _ptr_WriteEnable_Control;
     }
-
-// public.
+    // public.
+        // dynamic.
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK::initialise_Control(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj)
     {
         create_ptr_WriteEnable_Control();
@@ -45,7 +45,7 @@
         obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->writeEnable_SortQue(obj);
         obj->get_ptr_WriteEnable()->get_ptr_WriteEnable_Control()->writeEnable_Activate(obj, coreId);
     }
-    // get.
+            // get.
     OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global* OpenAvrilLIB::WriteEnableForThreadsAt_STACK::get_ptr_Global()
     {
         return _ptr_Global;
@@ -54,21 +54,36 @@
     {
         return _ptr_WriteEnable_Control;
     }
-    // set.
+            // set.
+        // static.
+            // get.
+            // set.
 
-// private.
+    // private.
+        // dynamic.
+            // get.
+            // set.
+        // static.
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK::create_ptr_Global()
     {
         set_ptr_Global(new class OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global());
-        while (get_ptr_Global() == NULL) {}
+        while (Get_ptr_Global() == NULL) {}
     }
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK::create_ptr_WriteEnable_Control()
     {
         set_ptr_WriteEnable_Control(new class OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control(_ptr_Global));
-        while (get_ptr_WriteEnable_Control() == NULL) {}
+        while (Get_ptr_WriteEnable_Control() == NULL) {}
     }
-    // get.
-    // set.
+            // get.
+    OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global* OpenAvrilLIB::WriteEnableForThreadsAt_STACK::Get_ptr_Global()
+    {
+        return _ptr_Global;
+    }
+    OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control* OpenAvrilLIB::WriteEnableForThreadsAt_STACK::Get_ptr_WriteEnable_Control()
+    {
+        return _ptr_WriteEnable_Control;
+    }
+            // set.
     void OpenAvrilLIB::WriteEnableForThreadsAt_STACK::set_ptr_Global(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global* global)
     {
         _ptr_Global = global;

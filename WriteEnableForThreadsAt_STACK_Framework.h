@@ -18,16 +18,25 @@ namespace OpenAvrilLIB
         virtual ~WriteEnableForThreadsAt_STACK_Framework();
 
 // public.
+    // dynamic.
         void initialise(class WriteEnableForThreadsAt_STACK_Framework* obj);
-    // get.
+        // get.
         class WriteEnableForThreadsAt_STACK* get_ptr_WriteEnable();
-    // set.
+        // set.
+    // static.
+        // get.
+        // set.
 
     private:
 // private.
-        void create_ptr_WriteEnable();
-    // get.
-    // set.
-        void set_ptr_WriteEnable(class WriteEnableForThreadsAt_STACK* writeEnable);
+    // dynamic.
+        // get.
+        // set.
+    // static.
+        static void create_ptr_WriteEnable();
+        // get.
+        static class WriteEnableForThreadsAt_STACK* Get_ptr_WriteEnable();
+        // set.
+        static void set_ptr_WriteEnable(class WriteEnableForThreadsAt_STACK* writeEnable);
     };
 }
