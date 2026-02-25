@@ -34,7 +34,7 @@ namespace OpenAvrilLIB
 	// static.
 		static void create_Framework();
 		// get.
-				static WriteEnableForThreadsAt_STACK_Framework* stat_get_ptr_Framework();
+		static WriteEnableForThreadsAt_STACK_Framework* stat_get_ptr_Framework();
 		// set.
 		static void stat_set_ptr_Framework(class WriteEnableForThreadsAt_STACK_Framework* newPtr);
 	// pointers.
