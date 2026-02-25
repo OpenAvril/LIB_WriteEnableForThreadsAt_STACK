@@ -56,7 +56,11 @@
 	{
 		return _ptr_Framework_WriteEnableForThreadsAt_STACK;
 	}
-		// get.
+	void OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::stat_set_Framework(WriteEnableForThreadsAt_STACK_Framework newClass)
+	{
+		///_Framework_WriteEnableForThreadsAt_STACK = newClass;
+	}
+	// get.
 		// set.
 	void OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::stat_set_ptr_Framework(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* writeEnable)
 	{

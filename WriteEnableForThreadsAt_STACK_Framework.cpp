@@ -2,7 +2,7 @@
 
 // pointers.
 	// classes.
-	OpenAvrilLIB::WriteEnableForThreadsAt_STACK* OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework::_ptr_WriteEnable = NULL;
+OpenAvrilLIB::WriteEnableForThreadsAt_STACK* OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework::_ptr_WriteEnable = NULL;
 	// registers.
 
 // constructor.
