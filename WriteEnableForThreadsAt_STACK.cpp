@@ -1,12 +1,10 @@
 #include "pch.h"
 
-// classes.
-    class OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global* _ptr_Global = NULL;
-    class OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control* _ptr_WriteEnable_Control = NULL;
-
-// registers.
-
 // pointers.
+    // classes.
+    class OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Global* OpenAvrilLIB::WriteEnableForThreadsAt_STACK::_ptr_Global = NULL;
+    class OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Control* OpenAvrilLIB::WriteEnableForThreadsAt_STACK::_ptr_WriteEnable_Control = NULL;
+    // registers.
 
 // constructor.
     OpenAvrilLIB::WriteEnableForThreadsAt_STACK::WriteEnableForThreadsAt_STACK()

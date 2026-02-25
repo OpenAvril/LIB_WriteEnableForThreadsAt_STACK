@@ -4,12 +4,6 @@ namespace OpenAvrilLIB
 {
     class WriteEnableForThreadsAt_STACK_Control
     {
-// classes.
-
-// registers.
-
-// pointers.
-
     public:
 // constructor.
         WriteEnableForThreadsAt_STACK_Control(class WriteEnableForThreadsAt_STACK_Global* global);
@@ -61,7 +55,7 @@ namespace OpenAvrilLIB
         // get.
         // set.
     // static.
-        static void create_flag_praisingWrite(bool newDEFAULT_bool);
+        static void create_flag_praisingWrite(bool* newDEFAULT_bool);
         static void create_list_Of_2ibt_flag_WriteState(std::array<bool, 2>* newDEFAULT_boolList);
         static void create_list_Of_WriteActive_Count_For_ThreadId(uint32_t* newDEFAULT_uint32_t);
         static void create_list_Of_WriteIdle_Count_For_ThreadId(uint32_t* newDEFAULT_uint32_t);
@@ -70,14 +64,6 @@ namespace OpenAvrilLIB
         static void create_QUE_List_Of_ThreadToWrite(uint8_t* newDEFAULT_uint8_t);
         static void create_writeCycle_Try_ThreadId_Index(uint8_t* newDEFAULT_uint8_t);
         // get.
-        static bool stat_get_flag_praisingWrite();
-        static std::array<bool, 2> stat_get_Item_On_list_Of_2ibt_flag_WriteState(uint8_t concurrentThreadID);
-        static uint32_t stat_get_Item_On_list_Of_WriteActive_Count_For_ThreadId(uint8_t concurrentThreadID);
-        static uint32_t stat_get_Item_On_list_Of_WriteIdle_Count_For_ThreadId(uint8_t concurrentThreadID);
-        static uint32_t stat_get_Item_On_list_Of_WriteWait_Count_For_ThreadId(uint8_t concurrentThreadID);
-        static uint8_t stat_get_new_writeCycle_Try_ThreadId_Index();
-        static uint8_t stat_get_Item_On_QUE_List_Of_ThreadToWrite(uint8_t slotID);
-        static uint8_t stat_get_writeCycle_Try_ThreadId_Index();
         static bool* stat_get_ptr_flag_praisingWrite();
         static std::list<std::array<bool, 2>>* stat_get_ptr_list_Of_2ibt_flag_WriteState();
         static std::list<uint32_t>* stat_get_ptr_list_Of_WriteActive_Count_For_ThreadId();
@@ -95,13 +81,16 @@ namespace OpenAvrilLIB
         static void stat_set_new_writeCycle_Try_ThreadId_Index(uint8_t newValue);
         static void stat_set_Item_On_QUE_List_Of_ThreadToWrite(uint8_t slotID, uint8_t concurrentThreadID);
         static void stat_set_writeCycle_Try_ThreadId_Index(uint8_t newValue);
-        static void stat_set_ptr_flag_praisingWrite(bool* newPtr);
-        static void stat_set_ptr_list_Of_2ibt_flag_WriteState(std::list<std::array<bool, 2>>* newPtr);
-        static void stat_set_ptr_list_Of_WriteActive_Count_For_ThreadId(std::list<uint32_t>* newPtr);
-        static void stat_set_ptr_list_Of_WriteIdle_Count_For_ThreadId(std::list<uint32_t>* newPtr);
-        static void stat_set_ptr_list_Of_WriteWait_Count_For_ThreadId(std::list<uint32_t>* newPtr);
-        static void stat_set_ptr_new_writeCycle_Try_ThreadId_Index(uint8_t* newPtr);
-        static void stat_set_ptr_QUE_List_Of_ThreadToWrite(std::list<uint8_t>* newPtr);
-        static void stat_set_ptr_writeCycle_Try_ThreadId_Index(uint8_t* newPtr);
+    // pointers.
+        // classes.
+        // registers.
+        static bool* _ptr_flag_praisingWrite;
+        static std::list<std::array<bool, 2>>* _ptr_list_Of_2ibt_flag_WriteState;
+        static std::list<uint32_t>* _ptr_list_Of_WriteActive_Count_For_ThreadId;
+        static std::list<uint32_t>* _ptr_list_Of_WriteIdle_Count_For_ThreadId;
+        static std::list<uint32_t>* _ptr_list_Of_WriteWait_Count_For_ThreadId;
+        static uint8_t* _ptr_new_writeCycle_Try_ThreadId_Index;
+        static std::list<uint8_t>* _ptr_QUE_List_Of_ThreadToWrite;
+        static uint8_t* _ptr_writeCycle_Try_ThreadId_Index;
     };
 }

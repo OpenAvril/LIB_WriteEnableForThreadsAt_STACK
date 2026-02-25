@@ -8,12 +8,6 @@ namespace OpenAvrilLIB
 {
 	class LIBWRITEENABLEFORTHREADSATSTACK_API CLIDWriteEnableForThreadsAtSTACK 
 	{
-// classes.
-
-// registers.
-
-// pointers.
-
 	public:
 // constructor.
 		CLIDWriteEnableForThreadsAtSTACK();
@@ -42,6 +36,10 @@ namespace OpenAvrilLIB
 		// get.
 		static WriteEnableForThreadsAt_STACK_Framework* stat_get_ptr_Framework();
 		// set.
-		static void set_ptr_Framework(class WriteEnableForThreadsAt_STACK_Framework* writeEnable);
+		static void stat_set_ptr_Framework(class WriteEnableForThreadsAt_STACK_Framework* writeEnable);
+	// pointers.
+		// classes.
+		static WriteEnableForThreadsAt_STACK_Framework* _ptr_Framework_WriteEnableForThreadsAt_STACK;
+		// registers.
 	};
 }

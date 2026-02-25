@@ -1,16 +1,14 @@
 #include "pch.h"
 
-// classes.
-	OpenAvrilLIB::WriteEnableForThreadsAt_STACK* _ptr_WriteEnable = NULL;
-
-// registers.
-
 // pointers.
+	// classes.
+	OpenAvrilLIB::WriteEnableForThreadsAt_STACK* OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework::_ptr_WriteEnable = NULL;
+	// registers.
 
 // constructor.
 	OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework::WriteEnableForThreadsAt_STACK_Framework()
 	{
-		create_ptr_WriteEnable();
+		create_WriteEnable();
 	}
 
 // destructor.
@@ -81,7 +79,7 @@
 		// get.
 		// set.
 	// static.
-	void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework::create_ptr_WriteEnable()
+	void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework::create_WriteEnable()
 	{
 		stat_set_ptr_WriteEnable(new class OpenAvrilLIB::WriteEnableForThreadsAt_STACK());
 		while (stat_get_ptr_WriteEnable() == NULL) {}
@@ -92,7 +90,7 @@
 		return _ptr_WriteEnable;
 	}
 		// set.
-	void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework::stat_set_ptr_WriteEnable(WriteEnableForThreadsAt_STACK* writeEnable)
+	void OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework::stat_set_ptr_WriteEnable(WriteEnableForThreadsAt_STACK* newPtr)
 	{
-		_ptr_WriteEnable = writeEnable;
+		_ptr_WriteEnable = newPtr;
 	}

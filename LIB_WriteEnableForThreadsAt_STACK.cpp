@@ -2,12 +2,10 @@
 #include "framework.h"
 #include "LIB_WriteEnableForThreadsAt_STACK.h"
 
-// classes.
-	OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* _ptr_Framework_WriteEnableForThreadsAt_STACK = NULL;
-
-// registers.
-
 // pointers.
+	// classes.
+	OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::_ptr_Framework_WriteEnableForThreadsAt_STACK = NULL;
+	// registers.
 
 // constructor.
 	OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK()
@@ -21,7 +19,7 @@
 	// dynamic.
 	void* OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::generate_Program()
 	{
-		set_ptr_Framework(new class OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework());
+		stat_set_ptr_Framework(new class OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework());
 		while (get_ptr_Framework() == NULL) {}
 		get_ptr_Framework()->initialise(get_ptr_Framework());
 		return (void*)get_ptr_Framework();
@@ -51,7 +49,7 @@
 	// static.
 	void OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::create_Framework()
 	{
-		set_ptr_Framework(new WriteEnableForThreadsAt_STACK_Framework());
+		stat_set_ptr_Framework(new WriteEnableForThreadsAt_STACK_Framework());
 		while (stat_get_ptr_Framework() == NULL) {}
 	}
 	OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::stat_get_ptr_Framework()
@@ -60,7 +58,7 @@
 	}
 		// get.
 		// set.
-	void OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::set_ptr_Framework(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* writeEnable)
+	void OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::stat_set_ptr_Framework(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* writeEnable)
 	{
 		_ptr_Framework_WriteEnableForThreadsAt_STACK = writeEnable;
 	}
