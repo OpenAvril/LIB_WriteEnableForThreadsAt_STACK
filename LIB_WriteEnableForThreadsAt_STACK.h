@@ -17,10 +17,10 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
 // public.
 	// dynamic.
 		static void* generate_Program();
-		static void write_End(WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId);
-		static void write_Start(WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId);
+		static void write_End(class WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId);
+		static void write_Start(class WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId);
 		// get.
-		static WriteEnableForThreadsAt_STACK_Framework* get_ptr_Framework();
+		static class WriteEnableForThreadsAt_STACK_Framework* get_ptr_Framework();
 		// set.
 	// static.
 		// get.
@@ -34,9 +34,9 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
 	// static.
 		static void create_Framework();
 		// get.
-		static WriteEnableForThreadsAt_STACK_Framework* stat_get_ptr_Framework();
+		static class WriteEnableForThreadsAt_STACK_Framework* stat_get_ptr_Framework();
 		// set.
-		static void stat_set_ptr_Framework(WriteEnableForThreadsAt_STACK_Framework* newPtr);
+		static void stat_set_ptr_Framework(class WriteEnableForThreadsAt_STACK_Framework* newPtr);
 	// pointers.
 		// classes.
 		// registers.
