@@ -1,6 +1,6 @@
 #pragma once
 
-namespace OpenAvrilLIB
+namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
 {
     class WriteEnableForThreadsAt_STACK_Framework
     {
@@ -34,7 +34,7 @@ namespace OpenAvrilLIB
         static void stat_set_ptr_WriteEnable(class WriteEnableForThreadsAt_STACK* writeEnable);
     // pointers.
         // classes.
-        static OpenAvrilLIB::WriteEnableForThreadsAt_STACK* _ptr_WriteEnable;
+        static OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK* _ptr_WriteEnable;
         // registers.
     };
 }

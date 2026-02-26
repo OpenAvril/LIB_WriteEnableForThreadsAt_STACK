@@ -4,11 +4,11 @@
 
 // pointers.
 	// classes.
-	OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::_ptr_Framework_WriteEnableForThreadsAt_STACK = NULL;
+	OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* _ptr_Framework_WriteEnableForThreadsAt_STACK = NULL;
 	// registers.
 
 // constructor.
-	OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK()
+	OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK()
 	{
 
 	}
@@ -17,23 +17,23 @@
 
 // public.
 	// dynamic.
-	void* OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::generate_Program()
+	void* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::generate_Program()
 	{
-		stat_set_ptr_Framework(new class OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework());
+		stat_set_ptr_Framework(new class OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework());
 		while (get_ptr_Framework() == NULL) {}
 		get_ptr_Framework()->initialise(get_ptr_Framework());
 		return (void*)get_ptr_Framework();
 	}
-	void OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::write_End(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId)
+	void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::write_End(OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId)
 	{
 		obj->get_ptr_WriteEnable()->write_End(obj, coreId);
 	}
-	void OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::write_Start(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId)
+	void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::write_Start(OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId)
 	{
 		obj->get_ptr_WriteEnable()->write_Start(obj, coreId);
 	}
 		// get.
-	OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::get_ptr_Framework()
+	OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::get_ptr_Framework()
 	{
 		return stat_get_ptr_Framework();
 	}
@@ -47,18 +47,18 @@
 		// get.
 		// set.
 	// static.
-	void OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::create_Framework()
+	void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::create_Framework()
 	{
 		stat_set_ptr_Framework(new WriteEnableForThreadsAt_STACK_Framework());
 		while (stat_get_ptr_Framework() == NULL) {}
 	}
-	OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::stat_get_ptr_Framework()
+	OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::stat_get_ptr_Framework()
 	{
 		return _ptr_Framework_WriteEnableForThreadsAt_STACK;
 	}
 	// get.
 		// set.
-	void OpenAvrilLIB::CLIDWriteEnableForThreadsAtSTACK::stat_set_ptr_Framework(OpenAvrilLIB::WriteEnableForThreadsAt_STACK_Framework* writeEnable)
+	void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::stat_set_ptr_Framework(OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* writeEnable)
 	{
 		_ptr_Framework_WriteEnableForThreadsAt_STACK = writeEnable;
 	}
