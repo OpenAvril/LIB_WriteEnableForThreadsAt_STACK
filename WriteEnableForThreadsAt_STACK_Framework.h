@@ -27,7 +27,7 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
         // get.
         // set.
     // static.
-        static void create_WriteEnable();
+        static void stat_create_WriteEnable();
         // get.
         static class WriteEnableForThreadsAt_STACK* stat_get_ptr_WriteEnable();
         // set.

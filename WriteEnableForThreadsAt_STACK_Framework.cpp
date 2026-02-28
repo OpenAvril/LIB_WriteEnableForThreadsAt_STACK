@@ -8,7 +8,7 @@ OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK* OpenAv
 // constructor.
 	OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework::WriteEnableForThreadsAt_STACK_Framework()
 	{
-		create_WriteEnable();
+		stat_create_WriteEnable();
 	}
 
 // destructor.
@@ -79,7 +79,7 @@ OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK* OpenAv
 		// get.
 		// set.
 	// static.
-	void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework::create_WriteEnable()
+	void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework::stat_create_WriteEnable()
 	{
 		stat_set_ptr_WriteEnable(new class OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK());
 		while (stat_get_ptr_WriteEnable() == NULL) {}
