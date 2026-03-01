@@ -24,17 +24,18 @@ Version 17.13.4
 
 namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION
 {
-	class LIBWRITEENABLEFORTHREADSATSERVERINPUTACTION_API CLIDWriteEnableForThreadsAtSERVERINPUTACTION 
+	class LIBWRITEENABLEFORTHREADSATSERVERINPUTACTION_API CLIDWriteEnableForThreadsAtSERVERINPUTACTION
 	{
 	public:
-// constructor.
+		// constructor.
 		CLIDWriteEnableForThreadsAtSERVERINPUTACTION();
 
-// destructor.
+		// destructor.
 
-// public.
-	// dynamic.
-		static void* generate_Program();
+		// public.
+			// dynamic.
+		//static void* generate_Program();//ToDO: uncomment for C#.
+		static OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* generate_Program();//ToDO: uncomment for C++.
 		static void write_End(class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* obj, uint8_t coreId);
 		static void write_Start(class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* obj, uint8_t coreId);
 		// get.
@@ -45,19 +46,19 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION
 		// set.
 
 	private:
-// private.
-	// dynamic.
-		// get.
-		// set.
-	// static.
-		static void create_Framework();
+		// private.
+			// dynamic.
+				// get.
+				// set.
+			// static.
+		static void stat_create_Framework();
 		// get.
 		static class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* stat_get_ptr_Framework();
 		// set.
 		static void stat_set_ptr_Framework(class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* newPtr);
-	// pointers.
-		// classes.
-		// registers.
+		// pointers.
+			// classes.
+			// registers.
 	};
 }
 ````
@@ -69,26 +70,35 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION
 
 // pointers.
 	// classes.
-	OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* _ptr_Framework_WriteEnableForThreadsAt_SERVERINPUTACTION = NULL;
-	// registers.
+OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* _ptr_Framework_WriteEnableForThreadsAt_SERVERINPUTACTION = NULL;
+// registers.
 
 // constructor.
-	OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION()
-	{
+OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION()
+{
 
-	}
+}
 
 // destructor.
 
 // public.
 	// dynamic.
+	/*
 	void* OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::generate_Program()
 	{
 		stat_set_ptr_Framework(new class OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework());
 		while (get_ptr_Framework() == NULL) {}
 		get_ptr_Framework()->initialise(get_ptr_Framework());
+		return (void*)get_ptr_Framework();
+	}//ToDO: uncomment for C#.
+	*/
+	OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::generate_Program()
+	{
+		stat_set_ptr_Framework(new class OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework());
+		while (get_ptr_Framework() == NULL) {}
+		get_ptr_Framework()->initialise(get_ptr_Framework());
 		return get_ptr_Framework();
-	}
+	}//ToDO: uncomment for C++.
 	void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::write_End(OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* obj, uint8_t coreId)
 	{
 		obj->get_ptr_WriteEnable()->write_End(obj, coreId);
@@ -112,7 +122,7 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION
 		// get.
 		// set.
 	// static.
-	void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::create_Framework()
+	void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::stat_create_Framework()
 	{
 		stat_set_ptr_Framework(new WriteEnableForThreadsAt_SERVERINPUTACTION_Framework());
 		while (stat_get_ptr_Framework() == NULL) {}
@@ -121,12 +131,12 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION
 	{
 		return _ptr_Framework_WriteEnableForThreadsAt_SERVERINPUTACTION;
 	}
-	// get.
+		// get.
 		// set.
 	void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::stat_set_ptr_Framework(OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* writeEnable)
 	{
 		_ptr_Framework_WriteEnableForThreadsAt_SERVERINPUTACTION = writeEnable;
-	}
+}
 ````
 #### LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.h
 ````
@@ -138,17 +148,18 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION
 
 namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE
 {
-	class LIBWRITEENABLEFORTHREADSATSERVEROUTPUTRECIEVE_API CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE 
+	class LIBWRITEENABLEFORTHREADSATSERVEROUTPUTRECIEVE_API CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE
 	{
 	public:
-// constructor.
+		// constructor.
 		CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE();
 
-// destructor.
+		// destructor.
 
-// public.
-	// dynamic.
-		static void* generate_Program();
+		// public.
+			// dynamic.
+		//static void* generate_Program();//ToDO: uncomment for C#.
+		static OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* generate_Program();//ToDO: uncomment for C++.
 		static void write_End(class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t coreId);
 		static void write_Start(class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t coreId);
 		// get.
@@ -159,19 +170,19 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE
 		// set.
 
 	private:
-// private.
-	// dynamic.
-		// get.
-		// set.
-	// static.
-		static void create_Framework();
+		// private.
+			// dynamic.
+				// get.
+				// set.
+			// static.
+		static void stat_create_Framework();
 		// get.
 		static class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* stat_get_ptr_Framework();
 		// set.
 		static void stat_set_ptr_Framework(class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* newPtr);
-	// pointers.
-		// classes.
-		// registers.
+		// pointers.
+			// classes.
+			// registers.
 	};
 }
 ````
@@ -183,26 +194,35 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE
 
 // pointers.
 	// classes.
-	OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* _ptr_Framework_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE = NULL;
-	// registers.
+OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* _ptr_Framework_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE = NULL;
+// registers.
 
 // constructor.
-	OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE()
-	{
+OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE()
+{
 
-	}
+}
 
 // destructor.
 
 // public.
 	// dynamic.
+	/*
 	void* OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::generate_Program()
 	{
 		stat_set_ptr_Framework(new class OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework());
 		while (get_ptr_Framework() == NULL) {}
 		get_ptr_Framework()->initialise(get_ptr_Framework());
+		return (void*)get_ptr_Framework();
+	}//ToDO: uncomment for C#.
+	*/
+	OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::generate_Program()
+	{
+		stat_set_ptr_Framework(new class OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework());
+		while (get_ptr_Framework() == NULL) {}
+		get_ptr_Framework()->initialise(get_ptr_Framework());
 		return get_ptr_Framework();
-	}
+	}//ToDO: uncomment for C++.
 	void OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::write_End(OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t coreId)
 	{
 		obj->get_ptr_WriteEnable()->write_End(obj, coreId);
@@ -226,7 +246,7 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE
 		// get.
 		// set.
 	// static.
-	void OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::create_Framework()
+	void OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::stat_create_Framework()
 	{
 		stat_set_ptr_Framework(new WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework());
 		while (stat_get_ptr_Framework() == NULL) {}
@@ -235,7 +255,7 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE
 	{
 		return _ptr_Framework_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE;
 	}
-	// get.
+		// get.
 		// set.
 	void OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::stat_set_ptr_Framework(OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* writeEnable)
 	{
@@ -288,6 +308,9 @@ namespace OpenAvrilCLIB
     }
 }
 ````
-
+### Java.
+#### x
+````
+````
 ## TestBench(s) in C#.
  - https://github.com/OpenAvril/TESTBENCH_OpenAvril
