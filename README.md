@@ -62,82 +62,7 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION
 	};
 }
 ````
-#### LIB_WriteEnableForThreadsAt_SERVERINPUTACTION.cpp
-````
-#include "pch.h"
-#include "framework.h"
-#include "LIB_WriteEnableForThreadsAt_SERVERINPUTACTION.h"
 
-// pointers.
-	// classes.
-OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* _ptr_Framework_WriteEnableForThreadsAt_SERVERINPUTACTION = NULL;
-// registers.
-
-// constructor.
-OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION()
-{
-
-}
-
-// destructor.
-
-// public.
-	// dynamic.
-	/*
-	void* OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::generate_Program()
-	{
-		stat_set_ptr_Framework(new class OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework());
-		while (get_ptr_Framework() == NULL) {}
-		get_ptr_Framework()->initialise(get_ptr_Framework());
-		return (void*)get_ptr_Framework();
-	}//ToDO: uncomment for C#.
-	*/
-	OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::generate_Program()
-	{
-		stat_set_ptr_Framework(new class OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework());
-		while (get_ptr_Framework() == NULL) {}
-		get_ptr_Framework()->initialise(get_ptr_Framework());
-		return get_ptr_Framework();
-	}//ToDO: uncomment for C++.
-	void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::write_End(OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* obj, uint8_t coreId)
-	{
-		obj->get_ptr_WriteEnable()->write_End(obj, coreId);
-	}
-	void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::write_Start(OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* obj, uint8_t coreId)
-	{
-		obj->get_ptr_WriteEnable()->write_Start(obj, coreId);
-	}
-		// get.
-	OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::get_ptr_Framework()
-	{
-		return stat_get_ptr_Framework();
-	}
-		// set.
-	// static.
-		// get.
-		// set.
-
-// private.
-	// dynamic.
-		// get.
-		// set.
-	// static.
-	void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::stat_create_Framework()
-	{
-		stat_set_ptr_Framework(new WriteEnableForThreadsAt_SERVERINPUTACTION_Framework());
-		while (stat_get_ptr_Framework() == NULL) {}
-	}
-	OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::stat_get_ptr_Framework()
-	{
-		return _ptr_Framework_WriteEnableForThreadsAt_SERVERINPUTACTION;
-	}
-		// get.
-		// set.
-	void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::CLIDWriteEnableForThreadsAtSERVERINPUTACTION::stat_set_ptr_Framework(OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* writeEnable)
-	{
-		_ptr_Framework_WriteEnableForThreadsAt_SERVERINPUTACTION = writeEnable;
-}
-````
 #### LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.h
 ````
 #ifdef LIBWRITEENABLEFORTHREADSATSERVEROUTPUTRECIEVE_EXPORTS
@@ -186,82 +111,6 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE
 	};
 }
 ````
-#### LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.cpp
-````
-#include "pch.h"
-#include "framework.h"
-#include "LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.h"
-
-// pointers.
-	// classes.
-OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* _ptr_Framework_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE = NULL;
-// registers.
-
-// constructor.
-OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE()
-{
-
-}
-
-// destructor.
-
-// public.
-	// dynamic.
-	/*
-	void* OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::generate_Program()
-	{
-		stat_set_ptr_Framework(new class OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework());
-		while (get_ptr_Framework() == NULL) {}
-		get_ptr_Framework()->initialise(get_ptr_Framework());
-		return (void*)get_ptr_Framework();
-	}//ToDO: uncomment for C#.
-	*/
-	OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::generate_Program()
-	{
-		stat_set_ptr_Framework(new class OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework());
-		while (get_ptr_Framework() == NULL) {}
-		get_ptr_Framework()->initialise(get_ptr_Framework());
-		return get_ptr_Framework();
-	}//ToDO: uncomment for C++.
-	void OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::write_End(OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t coreId)
-	{
-		obj->get_ptr_WriteEnable()->write_End(obj, coreId);
-	}
-	void OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::write_Start(OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t coreId)
-	{
-		obj->get_ptr_WriteEnable()->write_Start(obj, coreId);
-	}
-		// get.
-	OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::get_ptr_Framework()
-	{
-		return stat_get_ptr_Framework();
-	}
-		// set.
-	// static.
-		// get.
-		// set.
-
-// private.
-	// dynamic.
-		// get.
-		// set.
-	// static.
-	void OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::stat_create_Framework()
-	{
-		stat_set_ptr_Framework(new WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework());
-		while (stat_get_ptr_Framework() == NULL) {}
-	}
-	OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::stat_get_ptr_Framework()
-	{
-		return _ptr_Framework_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE;
-	}
-		// get.
-		// set.
-	void OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::stat_set_ptr_Framework(OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* writeEnable)
-	{
-		_ptr_Framework_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE = writeEnable;
-	}
-````
 
 ### C#
 #### IMPORT_LIB_WriteEnableForThreadsAt_CLIENTINPUTACTION.cs
@@ -308,7 +157,7 @@ namespace OpenAvrilCLIB
     }
 }
 ````
-### Java.
+### Java (build Library implementations for C# with void* uesed as Pointer in Java).
 #### x
  - https://www.google.com/search?q=how+to+wrap+for+java+jna+when+c%2B%2B+class+is+returned&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQszNDI4MjcwajBqN6gCCLACAfEFq2QzB9egsB4&sourceid=chrome&ie=UTF-8&udm=50&ved=2ahUKEwj6j93ArP6SAxUOUGcHHV16NVgQ0NsOegQIAxAB&aep=10&ntc=1&mstk=AUtExfDvIUYikdHOTzF-4NR4iaC9uUviX3HmBkEV4li8DUQmFDFUJG31vKQ-DrFMGVvI8Vwzi78GYjSXB-uuekCvKkGArPymuGZL1zYD7KHABfw-U0iuBp_Mqap9OszLsR0Dr2lRzOdN9hBn26r_nQw6jOl-Moz7vvJG9JLDK0uDrrc4cYNrvsXUPf4uUUSUfW4yvaV59fpeu27L3TMwONmqFucwB0iJjJzuUxvy0xuVubfnYKkFGI3T1xax6ykciXdXkVSflKLVqZ7mzp1tkqxBWVkls_vkZlBFn4v25kw4fxCuEpa8Z_aln2jaAOuumx_fLf-RjPgAI6TsJQ&csuir=1&mtid=JQKkaYr6HcyXwcsPhZi4qAw
 ````
