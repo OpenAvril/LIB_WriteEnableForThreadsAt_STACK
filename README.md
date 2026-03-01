@@ -310,6 +310,7 @@ namespace OpenAvrilCLIB
 ````
 ### Java.
 #### x
+ - https://www.google.com/search?q=how+to+wrap+for+java+jna+when+c%2B%2B+class+is+returned&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQszNDI4MjcwajBqN6gCCLACAfEFq2QzB9egsB4&sourceid=chrome&ie=UTF-8&udm=50&ved=2ahUKEwj6j93ArP6SAxUOUGcHHV16NVgQ0NsOegQIAxAB&aep=10&ntc=1&mstk=AUtExfDvIUYikdHOTzF-4NR4iaC9uUviX3HmBkEV4li8DUQmFDFUJG31vKQ-DrFMGVvI8Vwzi78GYjSXB-uuekCvKkGArPymuGZL1zYD7KHABfw-U0iuBp_Mqap9OszLsR0Dr2lRzOdN9hBn26r_nQw6jOl-Moz7vvJG9JLDK0uDrrc4cYNrvsXUPf4uUUSUfW4yvaV59fpeu27L3TMwONmqFucwB0iJjJzuUxvy0xuVubfnYKkFGI3T1xax6ykciXdXkVSflKLVqZ7mzp1tkqxBWVkls_vkZlBFn4v25kw4fxCuEpa8Z_aln2jaAOuumx_fLf-RjPgAI6TsJQ&csuir=1&mtid=JQKkaYr6HcyXwcsPhZi4qAw
 ````
 ````
 ## TestBench(s) in C#.
