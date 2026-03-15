@@ -64,12 +64,12 @@
         // static.
     void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK::stat_create_ptr_Global()
     {
-        stat_set_ptr_Global(new class OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global());
+        _ptr_Global = new class OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global();
         while (stat_get_ptr_Global() == NULL) {}
     }
     void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK::stat_create_ptr_WriteEnable_Control()
     {
-        stat_set_ptr_WriteEnable_Control(new class OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control(_ptr_Global));
+        _ptr_WriteEnable_Control = new class OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control(_ptr_Global);
         while (stat_get_ptr_WriteEnable_Control() == NULL) {}
     }
             // get.
@@ -82,11 +82,3 @@
         return _ptr_WriteEnable_Control;
     }
             // set.
-    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK::stat_set_ptr_Global(OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global* global)
-    {
-        _ptr_Global = global;
-    }
-    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK::stat_set_ptr_WriteEnable_Control(OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control* writeEnableControl)
-    {
-        _ptr_WriteEnable_Control = writeEnableControl;
-    }

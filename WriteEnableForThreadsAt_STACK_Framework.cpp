@@ -81,7 +81,7 @@ OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK* OpenAv
 	// static.
 	void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework::stat_create_WriteEnable()
 	{
-		stat_set_ptr_WriteEnable(new class OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK());
+		_ptr_WriteEnable = new class OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK();
 		while (stat_get_ptr_WriteEnable() == NULL) {}
 	}
 		// get.
@@ -90,7 +90,3 @@ OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK* OpenAv
 		return _ptr_WriteEnable;
 	}
 		// set.
-	void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework::stat_set_ptr_WriteEnable(WriteEnableForThreadsAt_STACK* newPtr)
-	{
-		_ptr_WriteEnable = newPtr;
-	}

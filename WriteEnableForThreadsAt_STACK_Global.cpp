@@ -67,6 +67,10 @@
         // set.
     // static.
         // get.
+    OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_obj_get_ClassOf(void* obj)
+    {
+        return reinterpret_cast<OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework*>(obj);
+    }
         // set.
 
 // private.
@@ -76,25 +80,25 @@
     // static.
     void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_create_2bit_flag_write_IDLE(std::array<bool, 2>* newDEAFULT_FlagSet)
     {
-        std::array<bool, 2>* _ptr_2bit_flag_write_IDLE = new std::array<bool, 2>;
+        _ptr_2bit_flag_write_IDLE = new std::array<bool, 2>;
         while (stat_get_ptr_2bit_flag_write_IDLE() == NULL) {}
         *_ptr_2bit_flag_write_IDLE = *newDEAFULT_FlagSet;
     }
     void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_create_2bit_flag_write_WAIT(std::array<bool, 2>* newDEAFULT_FlagSet)
     {
-        std::array<bool, 2>* _ptr_2bit_flag_write_WAIT = new std::array<bool, 2>;
+        _ptr_2bit_flag_write_WAIT = new std::array<bool, 2>;
         while (stat_get_ptr_2bit_flag_write_WAIT() == NULL) {}
         *_ptr_2bit_flag_write_WAIT = *newDEAFULT_FlagSet;
     }
     void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_create_2bit_flag_write_WRITE(std::array<bool, 2>* newDEAFULT_FlagSet)
     {
-        std::array<bool, 2>* _ptr_2bit_flag_write_WRITE = new std::array<bool, 2>;
+        _ptr_2bit_flag_write_WRITE = new std::array<bool, 2>;
         while (stat_get_ptr_2bit_flag_write_WRITE() == NULL) {}
         *_ptr_2bit_flag_write_WRITE = *newDEAFULT_FlagSet;
     }
     void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_create_number_Of_Implemented_Threads(uint8_t* newDEFAULT_Value)
     {
-        uint8_t* _ptr_number_Of_Implemented_Threads = new uint8_t();
+        _ptr_number_Of_Implemented_Threads = new uint8_t();
         while (stat_get_ptr_number_Of_Implemented_Threads() == NULL) {}
         *_ptr_number_Of_Implemented_Threads = *newDEFAULT_Value;
     }

@@ -25,6 +25,7 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
         // set.
     // static.
         // get.
+        static class WriteEnableForThreadsAt_STACK_Framework* stat_obj_get_ClassOf(void* obj);
         // set.
 
 // private.

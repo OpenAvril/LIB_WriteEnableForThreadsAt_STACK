@@ -36,8 +36,6 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
         static class WriteEnableForThreadsAt_STACK_Global* stat_get_ptr_Global();
         static class WriteEnableForThreadsAt_STACK_Control* stat_get_ptr_WriteEnable_Control();
         // set.
-        static void stat_set_ptr_Global(class WriteEnableForThreadsAt_STACK_Global* global);
-        static void stat_set_ptr_WriteEnable_Control(class WriteEnableForThreadsAt_STACK_Control* writeEnableControl);
     // pointers.
         // classes.
         static class WriteEnableForThreadsAt_STACK_Global* _ptr_Global;
