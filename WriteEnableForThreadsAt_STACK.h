@@ -5,41 +5,51 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
     class WriteEnableForThreadsAt_STACK
     {
     public:
-// constructor.
+// public.
+    // constructor.
         WriteEnableForThreadsAt_STACK();
 
-// destructor.
+    // destructor.
         virtual ~WriteEnableForThreadsAt_STACK();
 
-// public.
     // dynamic.
-        void initialise_Control(class WriteEnableForThreadsAt_STACK_Framework* obj);
-        void write_End(class WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId);
-        void write_Start(class WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId);
+        void dyn_initialise_Control(class WriteEnableForThreadsAt_STACK_Framework* obj);
+        void dyn_write_End(class WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId);
+        void dyn_write_Start(class WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId);
+        // create.    
         // get.
-        class WriteEnableForThreadsAt_STACK_Global* get_ptr_Global();
-        class WriteEnableForThreadsAt_STACK_Control* get_ptr_WriteEnable_Control();
+        class WriteEnableForThreadsAt_STACK_Global* dyn_CLASS_get_ptr_Global();
+        class WriteEnableForThreadsAt_STACK_Control* dyn_CLASS_get_ptr_WriteEnable_Control();
         // set.
     // static.
+        // create.
         // get.
         // set.
-    
-    private:
+
 // private.
     // dynamic.
-        // get.
-        // set.
-    // static.
-        static void stat_create_ptr_Global();
-        static void stat_create_ptr_WriteEnable_Control();
-        // get.
-        static class WriteEnableForThreadsAt_STACK_Global* stat_get_ptr_Global();
-        static class WriteEnableForThreadsAt_STACK_Control* stat_get_ptr_WriteEnable_Control();
-        // set.
-    // pointers.
         // classes.
-        static class WriteEnableForThreadsAt_STACK_Global* _ptr_Global;
-        static class WriteEnableForThreadsAt_STACK_Control* _ptr_WriteEnable_Control;
+            // create.
+            // get.
+            // set.
         // registers.
+            // create.
+            // get.
+            // set.
+    // static.
+        // classes.
+        static class WriteEnableForThreadsAt_STACK_Global* _stat_CLASS_ptr_Global;
+        static class WriteEnableForThreadsAt_STACK_Control* _stat_CLASS_ptr_WriteEnable_Control;
+            // create.
+        static void stat_CLASS_create_ptr_Global();
+        static void stat_CLASS_create_ptr_WriteEnable_Control();
+            // get.
+        static class WriteEnableForThreadsAt_STACK_Global* stat_CLASS_get_ptr_Global();
+        static class WriteEnableForThreadsAt_STACK_Control* stat_CLASS_get_ptr_WriteEnable_Control();
+            // set.
+        // registers.
+            // create.
+            // get.
+            // set.
     };
 }

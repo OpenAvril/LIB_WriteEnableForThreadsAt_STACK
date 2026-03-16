@@ -5,17 +5,17 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
     class WriteEnableForThreadsAt_STACK_Framework
     {
     public:
-// constructor.
+// public.
+    // constructor.
         WriteEnableForThreadsAt_STACK_Framework();
 
-// destructor.
+    // destructor.
         virtual ~WriteEnableForThreadsAt_STACK_Framework();
 
-// public.
     // dynamic.
-        void initialise(class WriteEnableForThreadsAt_STACK_Framework* obj);
+        void dyn_initialise(class WriteEnableForThreadsAt_STACK_Framework* obj);
         // get.
-        class WriteEnableForThreadsAt_STACK* get_ptr_WriteEnable();
+        class WriteEnableForThreadsAt_STACK* dyn_CLASS_get_ptr_WriteEnable();
         // set.
     // static.
         // get.
@@ -24,16 +24,27 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
     private:
 // private.
     // dynamic.
-        // get.
-        // set.
-    // static.
-        static void stat_create_WriteEnable();
-        // get.
-        static class WriteEnableForThreadsAt_STACK* stat_get_ptr_WriteEnable();
-        // set.
-    // pointers.
+
         // classes.
-        static OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK* _ptr_WriteEnable;
+            // create.
+            // get.
+
+            // set.
         // registers.
+            // create.
+            // get.
+            // set.
+    // static.
+        // classes.
+        static class WriteEnableForThreadsAt_STACK* _CLASS_get_ptr_WriteEnable;
+            // create.
+        static void stat_CLASS_create_WriteEnable();
+            // get.
+        static class WriteEnableForThreadsAt_STACK* stat_CLASS_get_ptr_WriteEnable();
+            // set.
+        // registers.
+            // create.
+            // get.
+            // set.
     };
 }

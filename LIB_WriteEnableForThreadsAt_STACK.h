@@ -9,15 +9,15 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
 	class LIBWRITEENABLEFORTHREADSATSTACK_API CLIDWriteEnableForThreadsAtSTACK 
 	{
 	public:
-// constructor.
+// public.
+	// constructor.
 		CLIDWriteEnableForThreadsAtSTACK();
 
-// destructor.
+	// destructor.
 
-// public.
 	// dynamic.
-		//static void* generate_Program();//ToDO: uncomment for C#.
-		static void* generate_Program();//ToDO: uncomment for C++.
+		static void* generate_Program();
+		static void terminate_Program();
 		static void write_End(void*, uint8_t coreId);
 		static void write_Start(void*, uint8_t coreId);
 		// get.
