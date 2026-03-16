@@ -12,6 +12,13 @@ Version: 24H2
 
 Version 17.13.4
 
+## Branches.
+
+### Main - Stable RELEASE.
+
+### TESTBENCH - with cout<<.
+
+
 ## How To Implement.
 ### C++.
 #### LIB_WriteEnableForThreadsAt_STACK.h.
