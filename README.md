@@ -1,20 +1,20 @@
-# OpenAvrilLIB
+# OpenAvrilLIB.
 ## .DLL Library Template - Request, Wait, Write for Threads at STACK.
 
-### Using C++
+### Using C++.
 
-### Using Windows 11 Home
+### Using Windows 11 Home.
 Edition: Windows 11 Home OEM System Builder
 
 Version: 24H2
 
-### Using Microsoft Visual Studio Professional 2022 (64-bit) - Current
+### Using Microsoft Visual Studio Professional 2022 (64-bit).
 
 Version 17.13.4
 
-## Using
-### C++
-#### LIB_WriteEnableForThreadsAt_STACK.h
+## How To Implement.
+### C++.
+#### LIB_WriteEnableForThreadsAt_STACK.h.
 ````
 #ifdef LIBWRITEENABLEFORTHREADSATSTACK_EXPORTS
 #define LIBWRITEENABLEFORTHREADSATSTACK_API __declspec(dllexport)
@@ -137,4 +137,12 @@ extern "C"
 		return _ptr_Framework_WriteEnableForThreadsAt_STACK;
 	}
 		// set.
+````
+
+### C#.
+````
+````
+
+### Java.
+````
 ````
