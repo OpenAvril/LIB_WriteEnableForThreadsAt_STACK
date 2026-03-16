@@ -1,8 +1,4 @@
 #include "pch.h"
-
-// pointers.
-    // classes.
-    // registers.
     bool* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::_stat_REG_ptr_flag_praisingWrite = NULL;
     std::list<std::array<bool, 2>>* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::_stat_REG_LIST_Of_3STATE_flag_WriteState = NULL;
     std::list<uint32_t>* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::_stat_REG_LIST_Of_WriteACTIVE_Count_For_ThreadId = NULL;
@@ -11,9 +7,6 @@
     uint8_t* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::_stat_REG_new_writeCycle_Try_ThreadId_Index = NULL;
     std::list<uint8_t>* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::_stat_REG_QUE_Of_ThreadID_To_WRITE = NULL;
     uint8_t* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::_stat_REG_ptr_writeCycle_Try_ThreadId_Index = NULL;
-
-// public.
-    // constructor.
     OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::WriteEnableForThreadsAt_STACK_Control()
     {
         bool* newDEAFULT_bool = new bool(true);
@@ -33,8 +26,6 @@
         state_REG_create_list_Of_WriteWait_Count_For_ThreadId(newDEFAULT_uint32_t);
         delete newDEFAULT_uint32_t;
     }
-
-    // destructor.
     OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::~WriteEnableForThreadsAt_STACK_Control()
     {
         delete _stat_REG_ptr_flag_praisingWrite;
@@ -46,8 +37,6 @@
         delete _stat_REG_QUE_Of_ThreadID_To_WRITE;
         delete _stat_REG_ptr_writeCycle_Try_ThreadId_Index;
     }
-
-    // dynamic.
     void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::dyn_writeEnable_Activate(OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId)
     {
         obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_set_Item_On_list_Of_2ibt_flag_WriteState(coreId, obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_Global()->dyn_REG_get_3STATE_flag_WAIT());
@@ -144,7 +133,6 @@
             }
         }
     }
-        // create.
     void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::dyn_REG_initialise_flag_praisingWrite(bool* newINITIALISED_bool)
     {
         stat_REG_dyn_REG_set_flag_praisingWrite(*newINITIALISED_bool);
@@ -177,7 +165,6 @@
     {
         stat_REG_set_writeCycle_Try_ThreadId_Index(*newINITIALISED_uint8_t);
     }
-        // get.
     bool OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::dyn_REG_get_ptr_flag_praisingWrite()
     {
         return *stat_REG_get_ptr_flag_praisingWrite();
@@ -220,8 +207,7 @@
     {
         return *stat_REG_get_ptr_writeCycle_Try_ThreadId_Index();
     }
-        // set.
-           void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::dyn_REG_set_flag_praisingWrite(bool newBoolValue)
+    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::dyn_REG_set_flag_praisingWrite(bool newBoolValue)
     {
         stat_REG_dyn_REG_set_flag_praisingWrite(newBoolValue);
     }
@@ -253,13 +239,6 @@
     {
         stat_REG_set_writeCycle_Try_ThreadId_Index(newID);
     }
-    // static.
-        // create.
-        // get.
-        // set.
-
-// private.
-    // dynamic.
     void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::dynamicStagger(OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId)
     {
         if (*stat_REG_get_ptr_writeCycle_Try_ThreadId_Index() == coreId)
@@ -295,21 +274,6 @@
         obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_set_Item_On_QUE_List_Of_ThreadToWrite(coreId_A, obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_get_ptr_QUE_List_Of_ThreadToWrite(coreId_B));
         obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_set_Item_On_QUE_List_Of_ThreadToWrite(coreId_B, temp_B);
     }
-        // classes.
-            // create.
-            // get.
-            // set.
-        // registers.
-            // create.
-            // get.
-            // set.
-    // static.
-        // classes.
-            // create.
-            // get.
-            // set.
-        // registers.
-            // create.
     void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::state_REG_create_flag_praisingWrite(bool* newDEFAULT_bool)
     {
         _stat_REG_ptr_flag_praisingWrite = new bool(NULL);
@@ -358,7 +322,6 @@
         while (stat_REG_get_ptr_writeCycle_Try_ThreadId_Index() == NULL) {}
         *_stat_REG_ptr_writeCycle_Try_ThreadId_Index = *newDEFAULT_uint8_t;
     }
-            // get.
     bool* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_get_ptr_flag_praisingWrite()
     {
         return _stat_REG_ptr_flag_praisingWrite;
@@ -391,7 +354,6 @@
     {
         return _stat_REG_ptr_writeCycle_Try_ThreadId_Index;
     }
-            // set.
     void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_dyn_REG_set_flag_praisingWrite(bool newFlag)
     {
         *_stat_REG_ptr_flag_praisingWrite = newFlag;

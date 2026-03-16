@@ -1,15 +1,8 @@
 #include "pch.h"
-
-// pointers.
-    // classes.
-    // registers.
     std::array<bool, 2>* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::_REG_ptr_3STATE_flag_IDLE = NULL;
     std::array<bool, 2>* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::_REG_ptr_3STATE_flag_WAIT = NULL;
     std::array<bool, 2>* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::_REG_ptr_3STATE_flag_WRITE = NULL;
     uint8_t* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::_REG_ptr_number_Of_Implemented_Threads = NULL;
-
-// public.
-    // constructor.
     OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::WriteEnableForThreadsAt_STACK_Global()
     {
         std::array<bool, 2>* newDEAFULT_FlagSet = new std::array<bool, 2>{true, true};
@@ -21,8 +14,6 @@
         stat_REG_create_number_Of_Implemented_Threads(newDEFAULT_Value);
         delete newDEFAULT_Value;
     }
-
-    // destructor.
     OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::~WriteEnableForThreadsAt_STACK_Global()
     {
         delete _REG_ptr_3STATE_flag_IDLE;
@@ -30,8 +21,6 @@
         delete _REG_ptr_3STATE_flag_WRITE;
         delete _REG_ptr_number_Of_Implemented_Threads;
     }
-
-    // dynamic.
     void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::dyn_REG_initialise_Item_Of_ptr_3STATE_flag_IDLE(std::array<bool, 2>* newINITIALISED_FlagBits)
     {
         stat_REG_set_3STATE_flag_IDLE(*newINITIALISED_FlagBits);
@@ -48,8 +37,6 @@
     {
         stat_REG_set_number_Of_Implemented_Threads(*newValue);
     }
-        // create.    
-        // get.
     std::array<bool, 2> OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::dyn_REG_get_3STATE_flag_IDLE()
     {
         return *stat_REG_get_ptr_3STATE_flag_IDLE();
@@ -66,33 +53,10 @@
     {
         return *stat_REG_get_ptr_number_Of_Implemented_Threads();
     }
-        // set.
-    // static.
-        // create.
-        // get.
     OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_OBJ_get_ClassOf(void* obj)
     {
         return reinterpret_cast<OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework*>(obj);
     }
-        // set.
-
-// private.
-    // dynamic.
-        // classes.
-            // create.
-            // get.
-            // set.
-        // registers.
-            // create.
-            // get.
-            // set.
-    // static.
-        // classes.
-            // create.
-            // get.
-            // set.
-        // registers.
-            // create.
     void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_REG_create_3STATE_flag_IDLE(std::array<bool, 2>* newDEAFULT_FlagSet)
     {
         _REG_ptr_3STATE_flag_IDLE = new std::array<bool, 2>;
@@ -117,7 +81,6 @@
         while (stat_REG_get_ptr_number_Of_Implemented_Threads() == NULL) {}
         *_REG_ptr_number_Of_Implemented_Threads = *newDEFAULT_Value;
     }
-            // get.
     std::array<bool, 2>* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_REG_get_ptr_3STATE_flag_IDLE()
     {
         return _REG_ptr_3STATE_flag_IDLE;
@@ -134,7 +97,6 @@
     {
         return _REG_ptr_number_Of_Implemented_Threads;
     }
-            // set.
     void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_REG_set_3STATE_flag_IDLE(std::array<bool, 2> new_FlagBitSet)
     {
         *_REG_ptr_3STATE_flag_IDLE = new_FlagBitSet;
