@@ -21,7 +21,6 @@
 	void* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::generate_Program()
 	{
 		stat_create_Framework();
-		while (stat_get_ptr_Framework() == NULL) {}
 		stat_get_ptr_Framework()->dyn_initialise(stat_get_ptr_Framework());
 		std::cout << "        ,     \\      /      ," << std::endl;
 		std::cout << "       / \\    )\\ __ /(     / \\ " << std::endl;
