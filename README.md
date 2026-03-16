@@ -21,43 +21,45 @@ Version 17.13.4
 #else
 #define LIBWRITEENABLEFORTHREADSATSTACK_API __declspec(dllimport)
 #endif
-
-namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
+extern "C"
 {
-	class LIBWRITEENABLEFORTHREADSATSTACK_API CLIDWriteEnableForThreadsAtSTACK 
+	namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
 	{
-	public:
+		class LIBWRITEENABLEFORTHREADSATSTACK_API CLIDWriteEnableForThreadsAtSTACK
+		{
+		public:
 // public.
 	// constructor.
-		CLIDWriteEnableForThreadsAtSTACK();
+			CLIDWriteEnableForThreadsAtSTACK();
 
 	// destructor.
 
 	// dynamic.
-		static void* generate_Program();
-		static void terminate_Program();
-		static void write_End(void*, uint8_t coreId);
-		static void write_Start(void*, uint8_t coreId);
+			static void* generate_Program();
+			static void terminate_Program();
+			static void write_End(void*, uint8_t coreId);
+			static void write_Start(void*, uint8_t coreId);
 		// get.
 		// set.
 	// static.
 		// get.
 		// set.
 
-	private:
+		private:
 // private.
 	// dynamic.
 		// get.
 		// set.
 	// static.
-		static void stat_create_Framework();
+			static void stat_create_Framework();
 		// get.
-		static class WriteEnableForThreadsAt_STACK_Framework* stat_get_ptr_Framework();
+			static class WriteEnableForThreadsAt_STACK_Framework* stat_get_ptr_Framework();
 		// set.
 	// pointers.
 		// classes.
 		// registers.
-	};
+		};
+	}
 }
 ````
 #### LIB_WriteEnableForThreadsAt_STACK.cpp
@@ -85,7 +87,6 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
 	void* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::generate_Program()
 	{
 		stat_create_Framework();
-		while (stat_get_ptr_Framework() == NULL) {}
 		stat_get_ptr_Framework()->dyn_initialise(stat_get_ptr_Framework());
 		std::cout << "        ,     \\      /      ," << std::endl;
 		std::cout << "       / \\    )\\ __ /(     / \\ " << std::endl;
