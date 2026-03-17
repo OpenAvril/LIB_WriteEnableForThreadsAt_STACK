@@ -5,7 +5,7 @@
 #endif
 extern "C"
 {
-	namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
+	namespace OpenAvrilCLIBWriteEnableForThreadsAtSTACK
 	{
 		class LIBWRITEENABLEFORTHREADSATSTACK_API CLIDWriteEnableForThreadsAtSTACK
 		{

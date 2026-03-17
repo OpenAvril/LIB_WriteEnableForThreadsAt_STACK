@@ -1,8 +1,8 @@
 #include "pch.h"
 #include "framework.h"
 #include "LIB_WriteEnableForThreadsAt_STACK.h"
-OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* _ptr_Framework_WriteEnableForThreadsAt_STACK = NULL;
-void* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::generate_Program()
+OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* _ptr_Framework_WriteEnableForThreadsAt_STACK = NULL;
+void* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::generate_Program()
 {
 	stat_create_Framework();
 	stat_get_ptr_Framework()->app_initialise(stat_get_ptr_Framework());
@@ -20,25 +20,25 @@ void* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTAC
 	std::cout << "`                 V                 '" << std::endl;
 	return (void*)stat_get_ptr_Framework();
 }
-void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::terminate_Program()
+void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::terminate_Program()
 {
 	delete _ptr_Framework_WriteEnableForThreadsAt_STACK;
 	while (stat_get_ptr_Framework() != NULL) {}
 }
-void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::write_End(void* obj, unsigned char* bytes)
+void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::write_End(void* obj, unsigned char* bytes)
 {
-	OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ObjPtr_to_Class(obj)->dyn_CLASS_get_ptr_WriteEnable()->dyn_write_End(OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ObjPtr_to_Class(obj), OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ByteArray_to_uint8_t(bytes));
+	OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ObjPtr_to_Class(obj)->dyn_CLASS_get_ptr_WriteEnable()->dyn_write_End(OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ObjPtr_to_Class(obj), OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ByteArray_to_uint8_t(bytes));
 }
-void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::write_Start(void* obj, unsigned char* bytes)
+void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::write_Start(void* obj, unsigned char* bytes)
 {
-	OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ObjPtr_to_Class(obj)->dyn_CLASS_get_ptr_WriteEnable()->dyn_write_Start(OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ObjPtr_to_Class(obj), OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ByteArray_to_uint8_t(bytes));
+	OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ObjPtr_to_Class(obj)->dyn_CLASS_get_ptr_WriteEnable()->dyn_write_Start(OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ObjPtr_to_Class(obj), OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ByteArray_to_uint8_t(bytes));
 }
-void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::stat_create_Framework()
+void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::stat_create_Framework()
 {
 	_ptr_Framework_WriteEnableForThreadsAt_STACK = new WriteEnableForThreadsAt_STACK_Framework();
 	while (stat_get_ptr_Framework() == NULL) {}
 }
-OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::stat_get_ptr_Framework()
+OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::stat_get_ptr_Framework()
 {
 	return _ptr_Framework_WriteEnableForThreadsAt_STACK;
 }

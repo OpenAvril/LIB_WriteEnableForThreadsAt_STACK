@@ -1,5 +1,5 @@
 #pragma once
-namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
+namespace OpenAvrilCLIBWriteEnableForThreadsAtSTACK
 {
     class WriteEnableForThreadsAt_STACK
     {
