@@ -10,11 +10,10 @@ extern "C"
 		class LIBWRITEENABLEFORTHREADSATSTACK_API CLIDWriteEnableForThreadsAtSTACK
 		{
 		public:
-			CLIDWriteEnableForThreadsAtSTACK();
 			static void* generate_Program();
 			static void terminate_Program();
-			static void write_End(void*, uint8_t coreId);
-			static void write_Start(void*, uint8_t coreId);
+			static void write_End(void*, unsigned char* bytes);
+			static void write_Start(void*, unsigned char* bytes);
 		private:
 			static void stat_create_Framework();
 			static class WriteEnableForThreadsAt_STACK_Framework* stat_get_ptr_Framework();

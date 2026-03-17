@@ -6,15 +6,17 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
     public:
         WriteEnableForThreadsAt_STACK_Global();
         ~WriteEnableForThreadsAt_STACK_Global();
-        void dyn_REG_initialise_Item_Of_ptr_3STATE_flag_IDLE(std::array<bool, 2>*newINITIALISED_FlagBits);
-        void dyn_REG_initialise_Item_Of_ptr_3STATE_flag_WAIT(std::array<bool, 2>* newINITIALISED_FlagBits);
-        void dyn_REG_initialise_Item_Of_ptr_3STATE_flag_WRITE(std::array<bool, 2>* newINITIALISED_FlagBits);
-        void dyn_REG_initialise_Ptr_number_Of_Implemented_Threads(uint8_t* newValue);
+        void app_REG_initialise_Item_Of_ptr_3STATE_flag_IDLE(std::array<bool, 2>*newINITIALISED_FlagBits);
+        void app_REG_initialise_Item_Of_ptr_3STATE_flag_WAIT(std::array<bool, 2>* newINITIALISED_FlagBits);
+        void app_REG_initialise_Item_Of_ptr_3STATE_flag_WRITE(std::array<bool, 2>* newINITIALISED_FlagBits);
+        void app_REG_initialise_Ptr_number_Of_Implemented_Threads(uint8_t* newValue);
         std::array<bool, 2> dyn_REG_get_3STATE_flag_IDLE();
         std::array<bool, 2> dyn_REG_get_3STATE_flag_WAIT();
         std::array<bool, 2> dyn_REG_get_3STATE_flag_WRITE();
         uint8_t dyn_REG_get_number_Of_Implemented_Threads();
+        static uint8_t stat_ByteArray_to_uint8_t(unsigned char* bytes);
         static class WriteEnableForThreadsAt_STACK_Framework* stat_OBJ_get_ClassOf(void* obj);
+        static unsigned char* stat_uint8_t_to_ByteArray(uint8_t uint8_t_Value);
     private:
         static std::array<bool, 2>* _REG_ptr_3STATE_flag_IDLE;
         static std::array<bool, 2>* _REG_ptr_3STATE_flag_WAIT;

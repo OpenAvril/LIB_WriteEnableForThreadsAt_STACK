@@ -133,35 +133,35 @@
             }
         }
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::dyn_REG_initialise_flag_praisingWrite(bool* newINITIALISED_bool)
+    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::app_REG_initialise_flag_praisingWrite(bool* newINITIALISED_bool)
     {
         stat_REG_dyn_REG_set_flag_praisingWrite(*newINITIALISED_bool);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::dyn_REG_initialise_Item_On_list_Of_3STATE_flag_WriteSTATE(uint8_t concurrentThreadID, std::array<bool, 2>* newINITIALISED_boolList)
+    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::app_REG_initialise_Item_On_list_Of_3STATE_flag_WriteSTATE(uint8_t concurrentThreadID, std::array<bool, 2>* newINITIALISED_boolList)
     {
         stat_REG_set_Item_On_Of_3STATE_flag_WriteState(concurrentThreadID, *newINITIALISED_boolList);;
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::dyn_REG_initialise_Item_On_list_Of_WriteACTIVE_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t* newINITIALISED_uint32_t)
+    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::app_REG_initialise_Item_On_list_Of_WriteACTIVE_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t* newINITIALISED_uint32_t)
     {
         stat_REG_set_Item_On_list_Of_WriteACTIVE_Count_For_ThreadId(concurrentThreadID, *newINITIALISED_uint32_t);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::dyn_REG_initialise_Item_On_list_Of_WriteIDLE_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t* newINITIALISED_uint32_t)
+    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::app_REG_initialise_Item_On_list_Of_WriteIDLE_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t* newINITIALISED_uint32_t)
     {
         stat_set_Item_On_list_Of_WriteIdle_Count_For_ThreadId(concurrentThreadID, *newINITIALISED_uint32_t);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::dyn_REG_initialise_Item_On_list_Of_WriteWAIT_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t* newINITIALISED_uint32_t)
+    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::app_REG_initialise_Item_On_list_Of_WriteWAIT_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t* newINITIALISED_uint32_t)
     {
         stat_REG_set_Item_On_list_Of_WriteWait_Count_For_ThreadId(concurrentThreadID, *newINITIALISED_uint32_t);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::dyn_REG_initialise_new_writeCycle_Try_ThreadId_Index(uint8_t* newINITIALISED_uint8_t)
+    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::app_REG_initialise_new_writeCycle_Try_ThreadId_Index(uint8_t* newINITIALISED_uint8_t)
     {
         stat_REG_set_new_writeCycle_Try_ThreadId_Index(*newINITIALISED_uint8_t);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::dyn_REG_initialise_Item_On_QUE_List_Of_ThreadToWrite(uint8_t slotID, uint8_t* newINITIALISED_uint8_t)
+    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::app_REG_initialise_Item_On_QUE_List_Of_ThreadToWrite(uint8_t slotID, uint8_t* newINITIALISED_uint8_t)
     {
         stat_REG_set_Item_On_QUE_List_Of_ThreadToWrite(slotID, *newINITIALISED_uint8_t);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::dyn_REG_initialise_writeCycle_Try_ThreadId_Index(uint8_t* newINITIALISED_uint8_t)
+    void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::app_REG_initialise_writeCycle_Try_ThreadId_Index(uint8_t* newINITIALISED_uint8_t)
     {
         stat_REG_set_writeCycle_Try_ThreadId_Index(*newINITIALISED_uint8_t);
     }
