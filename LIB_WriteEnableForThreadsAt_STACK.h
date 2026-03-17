@@ -7,7 +7,7 @@ extern "C"
 {
 	namespace OpenAvrilCLIBWriteEnableForThreadsAtSTACK
 	{
-		class LIBWRITEENABLEFORTHREADSATSTACK_API CLIDWriteEnableForThreadsAtSTACK
+		class LIBWRITEENABLEFORTHREADSATSTACK_API CLIBWriteEnableForThreadsAtSTACK
 		{
 		public:
 			static void* generate_Program();
