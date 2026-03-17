@@ -6,10 +6,10 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
     public:
         WriteEnableForThreadsAt_STACK_Control();
         ~WriteEnableForThreadsAt_STACK_Control();
-        void dyn_writeEnable_Activate(class WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId);
-        void dyn_writeEnable_SortQue(class WriteEnableForThreadsAt_STACK_Framework* obj);
-        void dyn_writeEnable_Request(class WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId);
-        void dyn_writeQue_Update(class WriteEnableForThreadsAt_STACK_Framework* obj);
+        void app_writeEnable_Activate(class WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId);
+        void app_writeEnable_SortQue(class WriteEnableForThreadsAt_STACK_Framework* obj);
+        void app_writeEnable_Request(class WriteEnableForThreadsAt_STACK_Framework* obj, uint8_t coreId);
+        void app_writeQue_Update(class WriteEnableForThreadsAt_STACK_Framework* obj);
         void app_REG_initialise_flag_praisingWrite(bool* newDEAFULT_bool);
         void app_REG_initialise_Item_On_list_Of_3STATE_flag_WriteSTATE(uint8_t concurrentThreadID, std::array<bool, 2>* newINITIALISED_boolList);
         void app_REG_initialise_Item_On_list_Of_WriteACTIVE_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t* newINITIALISED_uint32_t);

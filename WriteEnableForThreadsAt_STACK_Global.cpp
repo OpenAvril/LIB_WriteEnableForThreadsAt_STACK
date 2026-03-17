@@ -53,17 +53,17 @@
     {
         return *stat_REG_get_ptr_number_Of_Implemented_Threads();
     }
-    uint8_t OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_ByteArray_to_uint8_t(unsigned char* bytes)
+    uint8_t OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ByteArray_to_uint8_t(unsigned char* bytes)
     {
         uint8_t cpp_uint8_t_value;
         std::memcpy(&cpp_uint8_t_value, bytes, sizeof(cpp_uint8_t_value));
         return cpp_uint8_t_value;
     }
-    OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_OBJ_get_ClassOf(void* obj)
+    OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ObjPtr_to_Class(void* obj)
     {
         return reinterpret_cast<OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework*>(obj);
     }
-    unsigned char* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_uint8_t_to_ByteArray(uint8_t uint8_t_Value)
+    unsigned char* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_uint8_t_to_ByteArray(uint8_t uint8_t_Value)
     {
         unsigned char* bytes_array;
         std::memcpy(&bytes_array, &uint8_t_Value, sizeof(uint8_t_Value));

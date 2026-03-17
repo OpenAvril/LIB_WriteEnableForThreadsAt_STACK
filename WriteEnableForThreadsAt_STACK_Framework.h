@@ -6,7 +6,7 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
     public:
         WriteEnableForThreadsAt_STACK_Framework();
         virtual ~WriteEnableForThreadsAt_STACK_Framework();
-        void dyn_initialise(class WriteEnableForThreadsAt_STACK_Framework* obj);
+        void app_initialise(class WriteEnableForThreadsAt_STACK_Framework* obj);
         class WriteEnableForThreadsAt_STACK* dyn_CLASS_get_ptr_WriteEnable();
     private:
         static class WriteEnableForThreadsAt_STACK* _CLASS_get_ptr_WriteEnable;

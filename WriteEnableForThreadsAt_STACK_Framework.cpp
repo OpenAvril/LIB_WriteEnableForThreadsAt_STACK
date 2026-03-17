@@ -8,7 +8,7 @@ OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framewo
 {
 	delete _CLASS_get_ptr_WriteEnable;
 }
-void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework::dyn_initialise(OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj)
+void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework::app_initialise(OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj)
 {
 	std::array<bool, 2>* ptr_newINITIALISED_boolList = new std::array<bool, 2>;
 	while (ptr_newINITIALISED_boolList == NULL) {}
@@ -25,7 +25,7 @@ void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Fr
 	obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_Global()->app_REG_initialise_Ptr_number_Of_Implemented_Threads(newINITIALISED_uint32_t1);
 	delete newINITIALISED_uint32_t1;
 		
-	obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_initialise_Control(obj);
+	obj->dyn_CLASS_get_ptr_WriteEnable()->app_initialise_Control(obj);
 		
 	bool* newINITIALISED_bool = new bool(false);
 	obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->app_REG_initialise_flag_praisingWrite(newINITIALISED_bool);
