@@ -38,19 +38,25 @@ void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Fr
 void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework::boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Framework(OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj)
 {
 	std::cout << "entered CLIBMyMath::Framework_App::boot1_REG_DEFINE_Framework_App()" << std::endl;
-
+	obj->dyn_CLASS_get_ptr_WriteEnable()->boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK(obj);
+	obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_Global()->boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Global(obj);
+	obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Control(obj);
 	std::cout << "exiting CLIBMyMath::Framework_App::boot1_REG_DEFINE_Framework_App()" << std::endl;
 }
 void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework::boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_STACK_Framework(OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj)
 {
 	std::cout << "entered CLIBMyMath::Framework_App::boot2_REG_SUBSTANTIATE_Framework_App()" << std::endl;
-
+	obj->dyn_CLASS_get_ptr_WriteEnable()->boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_STACK(obj);
+	obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_Global()->boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_STACK_Global(obj);
+	obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_STACK_Control(obj);
 	std::cout << "exiting CLIBMyMath::Framework_App::boot2_REG_SUBSTANTIATE_Framework_App()" << std::endl;
 }
 void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework::boot3_REG_INITIALISE_WriteEnableForThreadsAt_STACK_Framework(OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj)
 {
 	std::cout << "entered CLIBMyMath::Framework_App::boot3_REG_INITIALISE_Framework_App()" << std::endl;
-
+	obj->dyn_CLASS_get_ptr_WriteEnable()->boot3_REG_INITIALISE_WriteEnableForThreadsAt_STACK(obj);
+	obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_Global()->boot3_REG_INITIALISE_WriteEnableForThreadsAt_STACK_Global(obj);
+	obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->boot3_REG_INITIALISE_WriteEnableForThreadsAt_STACK_Control(obj);
 	std::cout << "exiting CLIBMyMath::Framework_App::boot3_REG_INITIALISE_Framework_App()" << std::endl;
 }
 void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework::boot4_PGM_INSTANTIATE_WriteEnableForThreadsAt_STACK_Framework(OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj)
