@@ -23,19 +23,19 @@ Version 17.13.4
 #endif
 extern "C"
 {
-	namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
+	namespace OpenAvrilCLIBWriteEnableForThreadsAtSTACK
 	{
-		class LIBWRITEENABLEFORTHREADSATSTACK_API CLIDWriteEnableForThreadsAtSTACK
+		class LIBWRITEENABLEFORTHREADSATSTACK_API CLIBWriteEnableForThreadsAtSTACK
 		{
 		public:
-			CLIDWriteEnableForThreadsAtSTACK();
-			static void* generate_Program();
-			static void terminate_Program();
-			static void write_End(void*, uint8_t coreId);
-			static void write_Start(void*, uint8_t coreId);
+			static void* app_FUNCT_generate_Program();
+			static void app_FUNCT_terminate_Program();
+			static void app_FUNCT_write_End(void*, unsigned char* bytes);
+			static void app_FUNCT_write_Start(void*, unsigned char* bytes);
 		private:
-			static void stat_create_Framework();
-			static class WriteEnableForThreadsAt_STACK_Framework* stat_get_ptr_Framework();
+			static void stat_app1_CLASS_DEFINE_Framework();
+			static void stat_app3_CLASS_INITIALISE_Framework();
+			static class WriteEnableForThreadsAt_STACK_Framework* stat_CLASS_get_ptr_Framework();
 		};
 	}
 }
@@ -45,15 +45,30 @@ extern "C"
 #include "pch.h"
 #include "framework.h"
 #include "LIB_WriteEnableForThreadsAt_STACK.h"
-OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* _ptr_Framework_WriteEnableForThreadsAt_STACK = NULL;
-OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK()
+class OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* _ptr_Framework_WriteEnableForThreadsAt_STACK;
+void* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIBWriteEnableForThreadsAtSTACK::app_FUNCT_generate_Program()
 {
+	std::cout << "started Classes - DECLAIRE, DEFINE INITIALISE, Registers - DECLAIRE." << std::endl;
+	stat_app1_CLASS_DEFINE_Framework();
+	stat_app3_CLASS_INITIALISE_Framework();
+	std::cout << "done Classes - DECLAIRE, DEFINE INITIALISE, Registers - DECLAIRE." << std::endl;
 
-}
-void* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::generate_Program()
-{
-	stat_create_Framework();
-	stat_get_ptr_Framework()->dyn_initialise(stat_get_ptr_Framework());
+	std::cout << "started Registers - DEFINE" << std::endl;
+	stat_CLASS_get_ptr_Framework()->app1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Framework(stat_CLASS_get_ptr_Framework());
+	std::cout << "started Registers - DEFINE." << std::endl;
+
+	std::cout << "started Registers - SUBSTANTIATE." << std::endl;
+	stat_CLASS_get_ptr_Framework()->app2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_STACK_Framework(stat_CLASS_get_ptr_Framework());
+	std::cout << "started Registers - SUBSTANTIATE." << std::endl;
+
+	std::cout << "started Registers - INITIALISE." << std::endl;
+	stat_CLASS_get_ptr_Framework()->app3_REG_INITIALISE_WriteEnableForThreadsAt_STACK_Framework(stat_CLASS_get_ptr_Framework());
+	std::cout << "started Registers - INITIALISE." << std::endl;
+
+	std::cout << "started Program - INSTANTIATE." << std::endl;
+	stat_CLASS_get_ptr_Framework()->app4_PGM_INSTANTIATE_WriteEnableForThreadsAt_STACK_Framework(stat_CLASS_get_ptr_Framework());
+	std::cout << "started Program - INSTANTIATE." << std::endl;
+
 	std::cout << "        ,     \\      /      ," << std::endl;
 	std::cout << "       / \\    )\\ __ /(     / \\ " << std::endl;
 	std::cout << "      /   \\   (_\\  /_)    /   \\ " << std::endl;
@@ -66,27 +81,31 @@ void* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTAC
 	std::cout << "|  /    V          ))        V   \\  |" << std::endl;
 	std::cout << "|/                //               \\| " << std::endl;
 	std::cout << "`                 V                 '" << std::endl;
-	return (void*)stat_get_ptr_Framework();
+	return (void*)stat_CLASS_get_ptr_Framework();
 }
-void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::terminate_Program()
+void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIBWriteEnableForThreadsAtSTACK::app_FUNCT_terminate_Program()
 {
 	delete _ptr_Framework_WriteEnableForThreadsAt_STACK;
-	while (stat_get_ptr_Framework() != NULL) {}
+	while (stat_CLASS_get_ptr_Framework() != NULL) {}
 }
-void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::write_End(void* obj, uint8_t coreId)
+void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIBWriteEnableForThreadsAtSTACK::app_FUNCT_write_End(void* obj, unsigned char* bytes)
 {
-	OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_OBJ_get_ClassOf(obj)->dyn_CLASS_get_ptr_WriteEnable()->dyn_write_End(OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_OBJ_get_ClassOf(obj), coreId);
+	OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ObjPtr_to_Class(obj)->dyn_CLASS_get_ptr_WriteEnable()->dyn_app_FUNCT_write_End(OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ObjPtr_to_Class(obj), OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ByteArray_to_uint8_t(bytes));
 }
-void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::write_Start(void* obj, uint8_t coreId)
+void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIBWriteEnableForThreadsAtSTACK::app_FUNCT_write_Start(void* obj, unsigned char* bytes)
 {
-	OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_OBJ_get_ClassOf(obj)->dyn_CLASS_get_ptr_WriteEnable()->dyn_write_Start(OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_OBJ_get_ClassOf(obj), coreId);
+	OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ObjPtr_to_Class(obj)->dyn_CLASS_get_ptr_WriteEnable()->dyn_app_FUNCT_write_Start(OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ObjPtr_to_Class(obj), OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::stat_CONVERT_ByteArray_to_uint8_t(bytes));
 }
-void OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::stat_create_Framework()
+void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIBWriteEnableForThreadsAtSTACK::stat_app1_CLASS_DEFINE_Framework()
 {
-	_ptr_Framework_WriteEnableForThreadsAt_STACK = new WriteEnableForThreadsAt_STACK_Framework();
-	while (stat_get_ptr_Framework() == NULL) {}
+	_ptr_Framework_WriteEnableForThreadsAt_STACK = NULL;
 }
-OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::stat_get_ptr_Framework()
+void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIBWriteEnableForThreadsAtSTACK::stat_app3_CLASS_INITIALISE_Framework()
+{
+	_ptr_Framework_WriteEnableForThreadsAt_STACK = new class OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework();
+	while (stat_CLASS_get_ptr_Framework() == NULL) {}
+}
+OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIBWriteEnableForThreadsAtSTACK::stat_CLASS_get_ptr_Framework()
 {
 	return _ptr_Framework_WriteEnableForThreadsAt_STACK;
 }
@@ -101,4 +120,4 @@ OpenAvrilCLIDWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framewo
 ````
 
 ## TestBench.
-- https://github.com/OpenAvril/TESTBENCH_OpenAvril
+- https://github.com/OpenAvril/TestBench_OpenAvril
