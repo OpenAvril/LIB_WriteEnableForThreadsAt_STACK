@@ -11,20 +11,22 @@ void* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIBWriteEnableForThreadsAtSTAC
 
 	std::cout << "started Registers - DEFINE" << std::endl;
 	stat_CLASS_get_ptr_Framework()->boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Framework(stat_CLASS_get_ptr_Framework());
-	std::cout << "started Registers - DEFINE." << std::endl;
+	std::cout << "done Registers - DEFINE." << std::endl;
 
 	std::cout << "started Registers - SUBSTANTIATE." << std::endl;
 	stat_CLASS_get_ptr_Framework()->boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_STACK_Framework(stat_CLASS_get_ptr_Framework());
-	std::cout << "started Registers - SUBSTANTIATE." << std::endl;
+	std::cout << "done Registers - SUBSTANTIATE." << std::endl;
 
 	std::cout << "started Registers - INITIALISE." << std::endl;
 	stat_CLASS_get_ptr_Framework()->boot3_REG_INITIALISE_WriteEnableForThreadsAt_STACK_Framework(stat_CLASS_get_ptr_Framework());
-	std::cout << "started Registers - INITIALISE." << std::endl;
+	std::cout << "done Registers - INITIALISE." << std::endl;
 
 	std::cout << "started Program - INSTANTIATE." << std::endl;
 	stat_CLASS_get_ptr_Framework()->boot4_PGM_INSTANTIATE_WriteEnableForThreadsAt_STACK_Framework(stat_CLASS_get_ptr_Framework());
-	std::cout << "started Program - INSTANTIATE." << std::endl;
-
+	std::cout << "done Program - INSTANTIATE." << std::endl;
+	
+	std::cout << "" << std::endl;
+	std::cout << "        ,     \\      /      ," << std::endl;
 	std::cout << "        ,     \\      /      ," << std::endl;
 	std::cout << "       / \\    )\\ __ /(     / \\ " << std::endl;
 	std::cout << "      /   \\   (_\\  /_)    /   \\ " << std::endl;
@@ -37,6 +39,7 @@ void* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIBWriteEnableForThreadsAtSTAC
 	std::cout << "|  /    V          ))        V   \\  |" << std::endl;
 	std::cout << "|/                //               \\| " << std::endl;
 	std::cout << "`                 V                 '" << std::endl;
+	std::cout << "" << std::endl;
 	return (void*)stat_CLASS_get_ptr_Framework();
 }
 void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIBWriteEnableForThreadsAtSTACK::app_FUNCT_terminate_Program()

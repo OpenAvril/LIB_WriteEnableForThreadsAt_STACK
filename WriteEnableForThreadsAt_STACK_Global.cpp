@@ -19,36 +19,36 @@
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_STACK_Global()
     {
-        std::cout << "entered boot0_CLASS_DECLAIRE_Framework_App()" << std::endl;
+        std::cout << "entered boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_STACK_Global()." << std::endl;
 
-        std::cout << "exiting boot0_CLASS_DECLAIRE_Framework_App()" << std::endl;
+        std::cout << "exiting boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_STACK_Global()." << std::endl;
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::boot1_CLASS_DEFINE_WriteEnableForThreadsAt_STACK_Global()
     {
-        std::cout << "entered boot1_CLASS_DEFINE_Framework_App" << std::endl;
+        std::cout << "entered boot1_CLASS_DEFINE_WriteEnableForThreadsAt_STACK_Global()." << std::endl;
 
-        std::cout << "exiting boot1_CLASS_DEFINE_Framework_App" << std::endl;
+        std::cout << "exiting boot1_CLASS_DEFINE_WriteEnableForThreadsAt_STACK_Global9)." << std::endl;
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_STACK_Global()
     {
-        std::cout << "entered boot3_CLASS_INITIALISE_Framework_App()" << std::endl;
+        std::cout << "entered boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_STACK_Global()." << std::endl;
 
-        std::cout << "exiting boot3_CLASS_INITIALISE_Framework_App()" << std::endl;
+        std::cout << "exiting boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_STACK_Global()." << std::endl;
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::boot0_REG_DECLAIRE_WriteEnableForThreadsAt_STACK_Global()
     {
-        std::cout << "entered boot0_REG_DECLAIRE_WriteEnableForThreadsAt_STACK_Global()" << std::endl;
+        std::cout << "entered boot0_REG_DECLAIRE_WriteEnableForThreadsAt_STACK_Global()." << std::endl;
 
-        std::cout << "exiting boot0_REG_DECLAIRE_WriteEnableForThreadsAt_STACK_Global()" << std::endl;
+        std::cout << "exiting boot0_REG_DECLAIRE_WriteEnableForThreadsAt_STACK_Global()." << std::endl;
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Global(OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj)
     {
-        std::cout << "entered boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Global()" << std::endl;
+        std::cout << "entered boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Global()." << std::endl;
         stat_REG_boot1_DEFINE_ptr_3STATE_flag_IDLE();
         stat_REG_boot1_DEFINE_ptr_3STATE_flag_WAIT();
         stat_REG_boot1_DEFINE_ptr_3STATE_flag_WRITE();
         stat_REG_boot1_DEFINE_ptr_number_Of_Implemented_Threads();
-        std::cout << "exiting boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Global()" << std::endl;
+        std::cout << "exiting boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Global()." << std::endl;
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Global::boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_STACK_Global(OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj)
     {

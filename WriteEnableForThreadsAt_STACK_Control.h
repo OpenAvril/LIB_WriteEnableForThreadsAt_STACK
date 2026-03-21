@@ -42,7 +42,7 @@ namespace OpenAvrilCLIBWriteEnableForThreadsAtSTACK
         static std::list<uint32_t>* _stat_REG_LIST_Of_WriteIDLE_Count_For_ThreadId;
         static std::list<uint32_t>* _stat_REG_LIST_Of_WriteWAIT_Count_For_ThreadId;
         static uint8_t* _stat_REG_ptr_new_writeCycle_Try_ThreadId_Index;
-        static std::list<uint8_t>* _stat_REG_QUE_Of_ThreadID_To_Launch;
+        static std::list<uint8_t>* _stat_REG_QUE_Of_ThreadID_To_WRITE;
         static uint8_t* _stat_REG_ptr_writeCycle_Try_ThreadId_Index;
         static void stat_REG_boot1_DEFINE_ptr_flag_praisingWrite();
         static void stat_REG_boot1_DEFINE_ptr_3STATE_flag_WriteState();
@@ -54,11 +54,11 @@ namespace OpenAvrilCLIBWriteEnableForThreadsAtSTACK
         static void stat_REG_boot1_DEFINE_ptr_writeCycle_Try_ThreadId_Index();
         static void stat_REG_boot2_SUBSTANTIATE_ptr_flag_praisingWrite();
         static void stat_REG_boot2_SUBSTANTIATE_ptrv_3STATE_flag_WriteState();
-        static void stat_REG_boot2_SUBSTANTIATE_ptr_WriteACTIVE_Count_For_ThreadId();
-        static void stat_REG_boot2_SUBSTANTIATE_WriteIDLE_Count_For_ThreadId();
-        static void stat_REG_boot2_SUBSTANTIATE_WriteWAIT_Count_For_ThreadId();
+        static void stat_REG_boot2_SUBSTANTIATE_WriteACTIVE_Count_For_ThreadId(class WriteEnableForThreadsAt_STACK_Framework* obj);
+        static void stat_REG_boot2_SUBSTANTIATE_WriteIDLE_Count_For_ThreadId(class WriteEnableForThreadsAt_STACK_Framework* obj);
+        static void stat_REG_boot2_SUBSTANTIATE_WriteWAIT_Count_For_ThreadId(class WriteEnableForThreadsAt_STACK_Framework* obj);
         static void stat_REG_boot2_SUBSTANTIATE_new_writeCycle_Try_ThreadId_Index();
-        static void stat_REG_boot2_SUBSTANTIATE_ptr_QUE_Of_ThreadID_To_Launch();
+        static void stat_REG_boot2_SUBSTANTIATE_ptr_QUE_Of_ThreadID_To_WRITE();
         static void stat_REG_boot2_SUBSTANTIATE_writeCycle_Try_ThreadId_Index();
         static void stat_REG_boot3_INITIALISE_ptr_flag_praisingWrite();
         static void stat_REG_boot3_INITIALISE_ptr_3STATE_flag_WriteState();
@@ -66,7 +66,7 @@ namespace OpenAvrilCLIBWriteEnableForThreadsAtSTACK
         static void stat_REG_boot3_INITIALISE_WriteIDLE_Count_For_ThreadId();
         static void stat_REG_boot3_INITIALISE_WriteWAIT_Count_For_ThreadIdd();
         static void stat_REG_boot3_INITIALISE_new_writeCycle_Try_ThreadId_Index();
-        static void stat_REG_boot3_INITIALISE_ptr_QUE_Of_ThreadID_To_Launch();
+        static void stat_REG_boot3_INITIALISE_ptr_QUE_Of_ThreadID_To_WRITE();
         static void stat_REG_boot3_INITIALISE_writeCycle_Try_ThreadId_Index();
         static bool* stat_REG_get_ptr_flag_praisingWrite();
         static std::array <std::array<bool, 2>, 3>* stat_REG_get_ptr_Array_Of_3STATE_flag_WriteState();

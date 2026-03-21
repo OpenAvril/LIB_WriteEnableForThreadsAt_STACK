@@ -5,7 +5,7 @@ std::list<uint32_t>* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForTh
 std::list<uint32_t>* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::_stat_REG_LIST_Of_WriteIDLE_Count_For_ThreadId;
 std::list<uint32_t>* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::_stat_REG_LIST_Of_WriteWAIT_Count_For_ThreadId;
 uint8_t* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::_stat_REG_ptr_new_writeCycle_Try_ThreadId_Index;
-std::list<uint8_t>* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::_stat_REG_QUE_Of_ThreadID_To_Launch;
+std::list<uint8_t>* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::_stat_REG_QUE_Of_ThreadID_To_WRITE;
 uint8_t* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::_stat_REG_ptr_writeCycle_Try_ThreadId_Index;
     OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::WriteEnableForThreadsAt_STACK_Control()
     {
@@ -22,36 +22,36 @@ uint8_t* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STAC
         delete _stat_REG_LIST_Of_WriteIDLE_Count_For_ThreadId;
         delete _stat_REG_LIST_Of_WriteWAIT_Count_For_ThreadId;
         delete _stat_REG_ptr_new_writeCycle_Try_ThreadId_Index;
-        delete _stat_REG_QUE_Of_ThreadID_To_Launch;
+        delete _stat_REG_QUE_Of_ThreadID_To_WRITE;
         delete _stat_REG_ptr_writeCycle_Try_ThreadId_Index;
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_STACK_Control()
     {
-        std::cout << "entered boot0_CLASS_DECLAIRE_Framework_App()" << std::endl;
+        std::cout << "entered boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_STACK_Control()" << std::endl;
 
-        std::cout << "exiting boot0_CLASS_DECLAIRE_Framework_App()" << std::endl;
+        std::cout << "exiting boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_STACK_Control()" << std::endl;
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::boot1_CLASS_DEFINE_WriteEnableForThreadsAt_STACK_Control()
     {
-        std::cout << "entered boot1_CLASS_DEFINE_Framework_App" << std::endl;
+        std::cout << "entered boot1_CLASS_DEFINE_WriteEnableForThreadsAt_STACK_Control" << std::endl;
 
-        std::cout << "exiting boot1_CLASS_DEFINE_Framework_App" << std::endl;
+        std::cout << "exiting boot1_CLASS_DEFINE_WriteEnableForThreadsAt_STACK_Control" << std::endl;
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_STACK_Control()
     {
-        std::cout << "entered boot3_CLASS_INITIALISE_Framework_App()" << std::endl;
+        std::cout << "entered boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_STACK_Control()" << std::endl;
 
-        std::cout << "exiting boot3_CLASS_INITIALISE_Framework_App()" << std::endl;
+        std::cout << "exiting boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_STACK_Control()" << std::endl;
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::boot0_REG_DECLAIRE_WriteEnableForThreadsAt_STACK_Control()
     {
-        std::cout << "entered boot0_REG_DECLAIRE_Framework_App()" << std::endl;
+        std::cout << "entered boot0_REG_DECLAIRE_WriteEnableForThreadsAt_STACK_Control()" << std::endl;
 
-        std::cout << "exiting boot0_REG_DECLAIRE_Framework_App()" << std::endl;
+        std::cout << "exiting boot0_REG_DECLAIRE_WriteEnableForThreadsAt_STACK_Control()" << std::endl;
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Control(OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj)
     {
-        std::cout << "entered CLIBMyMath::Framework_App::boot1_REG_DEFINE_Framework_App()" << std::endl;
+        std::cout << "entered boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Control()" << std::endl;
         stat_REG_boot1_DEFINE_ptr_flag_praisingWrite();
         stat_REG_boot1_DEFINE_ptr_3STATE_flag_WriteState();
         stat_REG_boot1_DEFINE_ptr_WriteACTIVE_Count_For_ThreadId();
@@ -60,33 +60,33 @@ uint8_t* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STAC
         stat_REG_boot1_DEFINE_ptr_new_writeCycle_Try_ThreadId_Index();
         stat_REG_boot1_DEFINE_ptr_QUE_Of_ThreadID_To_WRITE();
         stat_REG_boot1_DEFINE_ptr_writeCycle_Try_ThreadId_Index();
-        std::cout << "exiting CLIBMyMath::Framework_App::boot1_REG_DEFINE_Framework_App()" << std::endl;
+        std::cout << "exiting boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Control()" << std::endl;
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_STACK_Control(OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj)
     {
-        std::cout << "entered CLIBMyMath::Framework_App::boot2_REG_SUBSTANTIATE_Framework_App()" << std::endl;
+        std::cout << "entered boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_STACK_Control()" << std::endl;
         stat_REG_boot2_SUBSTANTIATE_ptr_flag_praisingWrite();
         stat_REG_boot2_SUBSTANTIATE_ptrv_3STATE_flag_WriteState();
-        stat_REG_boot2_SUBSTANTIATE_ptr_WriteACTIVE_Count_For_ThreadId();
-        stat_REG_boot2_SUBSTANTIATE_WriteIDLE_Count_For_ThreadId();
-        stat_REG_boot2_SUBSTANTIATE_WriteWAIT_Count_For_ThreadId();
+        stat_REG_boot2_SUBSTANTIATE_WriteACTIVE_Count_For_ThreadId(obj);
+        stat_REG_boot2_SUBSTANTIATE_WriteIDLE_Count_For_ThreadId(obj);
+        stat_REG_boot2_SUBSTANTIATE_WriteWAIT_Count_For_ThreadId(obj);
         stat_REG_boot2_SUBSTANTIATE_new_writeCycle_Try_ThreadId_Index();
-        stat_REG_boot2_SUBSTANTIATE_ptr_QUE_Of_ThreadID_To_Launch();
+        stat_REG_boot2_SUBSTANTIATE_ptr_QUE_Of_ThreadID_To_WRITE();
         stat_REG_boot2_SUBSTANTIATE_writeCycle_Try_ThreadId_Index();
-        std::cout << "exiting CLIBMyMath::Framework_App::boot2_REG_SUBSTANTIATE_Framework_App()" << std::endl;
+        std::cout << "exiting boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_STACK_Control()" << std::endl;
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::boot3_REG_INITIALISE_WriteEnableForThreadsAt_STACK_Control(OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj)
     {
-        std::cout << "entered CLIBMyMath::Framework_App::boot3_REG_INITIALISE_Framework_App()" << std::endl;
+        std::cout << "entered boot3_REG_INITIALISE_WriteEnableForThreadsAt_STACK_Control()" << std::endl;
         stat_REG_boot3_INITIALISE_ptr_flag_praisingWrite();
         stat_REG_boot3_INITIALISE_ptr_3STATE_flag_WriteState();
         stat_REG_boot3_INITIALISE_ptr_WriteACTIVE_Count_For_ThreadId();
         stat_REG_boot3_INITIALISE_WriteIDLE_Count_For_ThreadId();
         stat_REG_boot3_INITIALISE_WriteWAIT_Count_For_ThreadIdd();
         stat_REG_boot3_INITIALISE_new_writeCycle_Try_ThreadId_Index();
-        stat_REG_boot3_INITIALISE_ptr_QUE_Of_ThreadID_To_Launch();
+        stat_REG_boot3_INITIALISE_ptr_QUE_Of_ThreadID_To_WRITE();
         stat_REG_boot3_INITIALISE_writeCycle_Try_ThreadId_Index();
-        std::cout << "exiting CLIBMyMath::Framework_App::boot3_REG_INITIALISE_Framework_App()" << std::endl;
+        std::cout << "exiting boot3_REG_INITIALISE_WriteEnableForThreadsAt_STACK_Control()" << std::endl;
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::boot4_PGM_INSTANTIATE_WriteEnableForThreadsAt_STACK_Control(OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj)
     {
@@ -323,7 +323,7 @@ uint8_t* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STAC
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot1_DEFINE_ptr_QUE_Of_ThreadID_To_WRITE()
     {
-        _stat_REG_QUE_Of_ThreadID_To_Launch = NULL;
+        _stat_REG_QUE_Of_ThreadID_To_WRITE = NULL;
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot1_DEFINE_ptr_writeCycle_Try_ThreadId_Index()
     {
@@ -331,73 +331,103 @@ uint8_t* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STAC
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot2_SUBSTANTIATE_ptr_flag_praisingWrite()
     {
+        _stat_REG_ptr_flag_praisingWrite = new bool();
         *_stat_REG_ptr_flag_praisingWrite = true;
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot2_SUBSTANTIATE_ptrv_3STATE_flag_WriteState()
     {
         _stat_REG_LIST_Of_3STATE_flag_WriteState = new std::array<std::array<bool, 2>, 3>();
         while (stat_REG_get_ptr_Array_Of_3STATE_flag_WriteState() == NULL) {}
-        _stat_REG_LIST_Of_3STATE_flag_WriteState[0] = { true, true };
-        _stat_REG_LIST_Of_3STATE_flag_WriteState[1] = { true, true };
-        _stat_REG_LIST_Of_3STATE_flag_WriteState[2] = { true, true };
+        _stat_REG_LIST_Of_3STATE_flag_WriteState->at(0) = { true, true };
+        _stat_REG_LIST_Of_3STATE_flag_WriteState->at(1) = { true, true };
+        _stat_REG_LIST_Of_3STATE_flag_WriteState->at(2) = { true, true };
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot2_SUBSTANTIATE_ptr_WriteACTIVE_Count_For_ThreadId()
+    void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot2_SUBSTANTIATE_WriteACTIVE_Count_For_ThreadId(OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj)
     {
-        _stat_REG_LIST_Of_WriteACTIVE_Count_For_ThreadId = new std::list<uint32_t>(UINT8_MAX);
+        _stat_REG_LIST_Of_WriteACTIVE_Count_For_ThreadId = new std::list<uint32_t>();
         while (stat_REG_get_ptr_list_Of_WriteActive_Count_For_ThreadId() == NULL) {}
+        stat_REG_get_ptr_list_Of_WriteActive_Count_For_ThreadId()->resize(obj->dyn_CLASS_get_ptr_WriteEnable()->stat_CLASS_get_ptr_Global()->dyn_REG_get_number_Of_Implemented_Threads());
+        for (uint8_t threadId = 0; threadId < obj->dyn_CLASS_get_ptr_WriteEnable()->stat_CLASS_get_ptr_Global()->dyn_REG_get_number_Of_Implemented_Threads(); threadId++)
+        {
+            auto temp = stat_REG_get_ptr_list_Of_WriteActive_Count_For_ThreadId()->begin();
+            std:advance(temp, threadId);
+            *temp = (uint32_t)(UINT32_MAX);
+        }
+
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot2_SUBSTANTIATE_WriteIDLE_Count_For_ThreadId()
+    void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot2_SUBSTANTIATE_WriteIDLE_Count_For_ThreadId(OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj)
     {
-        _stat_REG_LIST_Of_WriteIDLE_Count_For_ThreadId = new std::list<uint32_t>(UINT8_MAX);
+        _stat_REG_LIST_Of_WriteIDLE_Count_For_ThreadId = new std::list<uint32_t>();
         while (stat_REG_get_ptr_list_Of_WriteIdle_Count_For_ThreadId() == NULL) {}
+        stat_REG_get_ptr_list_Of_WriteIdle_Count_For_ThreadId()->resize(obj->dyn_CLASS_get_ptr_WriteEnable()->stat_CLASS_get_ptr_Global()->dyn_REG_get_number_Of_Implemented_Threads());
+        for (uint8_t threadId = 0; threadId < obj->dyn_CLASS_get_ptr_WriteEnable()->stat_CLASS_get_ptr_Global()->dyn_REG_get_number_Of_Implemented_Threads(); threadId++)
+        {
+            auto temp = stat_REG_get_ptr_list_Of_WriteIdle_Count_For_ThreadId()->begin();
+        std:advance(temp, threadId);
+            *temp = uint32_t(UINT32_MAX);
+        }
+
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot2_SUBSTANTIATE_WriteWAIT_Count_For_ThreadId()
+    void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot2_SUBSTANTIATE_WriteWAIT_Count_For_ThreadId(OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Framework* obj)
     {
-        _stat_REG_LIST_Of_WriteWAIT_Count_For_ThreadId = new std::list<uint32_t>(UINT8_MAX);
+        _stat_REG_LIST_Of_WriteWAIT_Count_For_ThreadId = new std::list<uint32_t>();
         while (stat_REG_get_ptr_list_Of_WriteWait_Count_For_ThreadId() == NULL) {}
+        stat_REG_get_ptr_list_Of_WriteWait_Count_For_ThreadId()->resize(obj->dyn_CLASS_get_ptr_WriteEnable()->stat_CLASS_get_ptr_Global()->dyn_REG_get_number_Of_Implemented_Threads());
+        for (uint8_t threadId = 0; threadId < obj->dyn_CLASS_get_ptr_WriteEnable()->stat_CLASS_get_ptr_Global()->dyn_REG_get_number_Of_Implemented_Threads(); threadId++)
+        {
+            auto temp = stat_REG_get_ptr_list_Of_WriteWait_Count_For_ThreadId()->begin();
+            std:advance(temp, threadId);
+            *temp = uint32_t(UINT32_MAX);
+        }
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot2_SUBSTANTIATE_new_writeCycle_Try_ThreadId_Index()
     {
-        _stat_REG_ptr_new_writeCycle_Try_ThreadId_Index = new uint8_t(UINT8_MAX);
+        _stat_REG_ptr_new_writeCycle_Try_ThreadId_Index = new uint8_t();
+        *_stat_REG_ptr_new_writeCycle_Try_ThreadId_Index = uint8_t(UINT8_MAX);
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot2_SUBSTANTIATE_ptr_QUE_Of_ThreadID_To_Launch()
+    void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot2_SUBSTANTIATE_ptr_QUE_Of_ThreadID_To_WRITE()
     {
-        _stat_REG_QUE_Of_ThreadID_To_Launch = new std::list<uint8_t>(UINT8_MAX);
+        _stat_REG_QUE_Of_ThreadID_To_WRITE = new std::list<uint8_t>();
         while (stat_REG_get_ptr_QUE_List_Of_ThreadToWrite() == NULL) {}
+        *_stat_REG_QUE_Of_ThreadID_To_WRITE = { uint8_t(UINT8_MAX), uint8_t(UINT8_MAX), uint8_t(UINT8_MAX) , uint8_t(UINT8_MAX) };
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot2_SUBSTANTIATE_writeCycle_Try_ThreadId_Index()
     {
-        _stat_REG_ptr_writeCycle_Try_ThreadId_Index = new uint8_t(UINT8_MAX);
+        _stat_REG_ptr_writeCycle_Try_ThreadId_Index = new uint8_t();
+        *_stat_REG_ptr_writeCycle_Try_ThreadId_Index = uint8_t(UINT8_MAX);
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot3_INITIALISE_ptr_flag_praisingWrite()
     {
+        _stat_REG_ptr_flag_praisingWrite = new bool();
         *_stat_REG_ptr_flag_praisingWrite = false;
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot3_INITIALISE_ptr_3STATE_flag_WriteState()
     {
-        _stat_REG_LIST_Of_3STATE_flag_WriteState[0] = { false, false };
-        _stat_REG_LIST_Of_3STATE_flag_WriteState[1] = { false, true };
-        _stat_REG_LIST_Of_3STATE_flag_WriteState[2] = { true, false };
+        _stat_REG_LIST_Of_3STATE_flag_WriteState = new std::array <std::array<bool, 2>, 3>();
+        while (stat_REG_get_ptr_Array_Of_3STATE_flag_WriteState() == NULL) {}
+        _stat_REG_LIST_Of_3STATE_flag_WriteState->at(0) = { false, false };
+        _stat_REG_LIST_Of_3STATE_flag_WriteState->at(1) = { false, true };
+        _stat_REG_LIST_Of_3STATE_flag_WriteState->at(2) = { true, false };
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot3_INITIALISE_ptr_WriteACTIVE_Count_For_ThreadId()
     {
-        *_stat_REG_LIST_Of_WriteACTIVE_Count_For_ThreadId = { (uint8_t)(0), (uint8_t)(0), (uint8_t)(0) };
+        *_stat_REG_LIST_Of_WriteACTIVE_Count_For_ThreadId = { (uint32_t)(0), (uint32_t)(0), (uint32_t)(0), (uint32_t)(0) };
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot3_INITIALISE_WriteIDLE_Count_For_ThreadId()
     {
-        *_stat_REG_LIST_Of_WriteIDLE_Count_For_ThreadId = { (uint8_t)(0), (uint8_t)(0), (uint8_t)(0) };
+        *_stat_REG_LIST_Of_WriteIDLE_Count_For_ThreadId = { (uint32_t)(0), (uint32_t)(0), (uint32_t)(0), (uint32_t)(0) };
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot3_INITIALISE_WriteWAIT_Count_For_ThreadIdd()
     {
-        *_stat_REG_LIST_Of_WriteWAIT_Count_For_ThreadId = { (uint8_t)(0), (uint8_t)(0), (uint8_t)(0) };
+        *_stat_REG_LIST_Of_WriteWAIT_Count_For_ThreadId = { (uint32_t)(0), (uint32_t)(0), (uint32_t)(0), (uint32_t)(0) };
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot3_INITIALISE_new_writeCycle_Try_ThreadId_Index()
     {
         *_stat_REG_ptr_new_writeCycle_Try_ThreadId_Index = (uint8_t)(1);
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot3_INITIALISE_ptr_QUE_Of_ThreadID_To_Launch()
+    void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot3_INITIALISE_ptr_QUE_Of_ThreadID_To_WRITE()
     {
-        *_stat_REG_QUE_Of_ThreadID_To_Launch = { (uint8_t)(0), (uint8_t)(1), (uint8_t)(2) };
+        *_stat_REG_QUE_Of_ThreadID_To_WRITE = { (uint8_t)(0), (uint8_t)(1), (uint8_t)(2), (uint8_t)(3) };
     }
     void OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_boot3_INITIALISE_writeCycle_Try_ThreadId_Index()
     {
@@ -429,7 +459,7 @@ uint8_t* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STAC
     }
     std::list<uint8_t>* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_get_ptr_QUE_List_Of_ThreadToWrite()
     {
-        return _stat_REG_QUE_Of_ThreadID_To_Launch;
+        return _stat_REG_QUE_Of_ThreadID_To_WRITE;
     }
     uint8_t* OpenAvrilCLIBWriteEnableForThreadsAtSTACK::WriteEnableForThreadsAt_STACK_Control::stat_REG_get_ptr_writeCycle_Try_ThreadId_Index()
     {
